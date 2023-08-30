@@ -1,0 +1,11 @@
+framework module EvolisFramework {
+  umbrella header "EvolisFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module EvolisFramework.Swift {
+  header "EvolisFramework-Swift.h"
+  requires objc
+}
