@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "evolis-swift-sdk",
+    name: "EvolisFramework",
     platforms: [
         .macOS(.v10_14), .iOS(.v14),
     ],
