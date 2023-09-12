@@ -1,9 +1,9 @@
+// Evolis Swift Wrapper
 //
-//  EvolisFramework.h
-//  EvolisFramework
-//
-//  Created by Creative on 20/03/2023.
-//
+// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+// ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+// THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+// PARTICULAR PURPOSE.
 
 #import <Foundation/Foundation.h>
 
