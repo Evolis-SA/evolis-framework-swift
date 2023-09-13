@@ -288,8 +288,8 @@ public class Connection {
   public func setSessionManagement(_ on: Swift.Bool)
   public func getErrorManagement() -> EvolisFramework.ErrorManagement?
   public func setErrorManagement(_ em: EvolisFramework.ErrorManagement) -> Swift.Bool
-  public func getStatus() -> EvolisFramework.Status?
-  public func getState() -> EvolisFramework.State?
+  public func getStatus() -> EvolisFramework.PrinterStatus?
+  public func getState() -> EvolisFramework.PrinterState?
   public func getInfo() -> EvolisFramework.PrinterInfo?
   public func getRibbonInfo() -> EvolisFramework.RibbonInfo?
   public func getCleaningInfo() -> EvolisFramework.CleaningInfo?
@@ -314,62 +314,17 @@ public enum Feeder : Swift.UInt32 {
     get
   }
 }
-public enum PrinterType : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
-  case AUTO
-  case EVOLIS
-  case AVANSIA
-  public init?(rawValue: Swift.UInt32)
-  public typealias AllCases = [EvolisFramework.PrinterType]
-  public typealias RawValue = Swift.UInt32
-  public static var allCases: [EvolisFramework.PrinterType] {
-    get
-  }
-  public var rawValue: Swift.UInt32 {
-    get
-  }
-}
-public enum Link : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
-  case INVALID
-  case TCP
-  case USB
-  case FILE
-  public init?(rawValue: Swift.UInt32)
-  public typealias AllCases = [EvolisFramework.Link]
-  public typealias RawValue = Swift.UInt32
-  public static var allCases: [EvolisFramework.Link] {
-    get
-  }
-  public var rawValue: Swift.UInt32 {
-    get
-  }
-}
-public enum LogLevel : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
-  case TRACE
-  case DEBUG
-  case INFO
-  case WARNING
-  case ERROR
-  public init?(rawValue: Swift.UInt32)
-  public typealias AllCases = [EvolisFramework.LogLevel]
-  public typealias RawValue = Swift.UInt32
-  public static var allCases: [EvolisFramework.LogLevel] {
-    get
-  }
-  public var rawValue: Swift.UInt32 {
-    get
-  }
-}
-public class State {
+public class PrinterState {
   public enum MajorState : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
     case OFF
     case READY
     case WARNING
     case ERROR
-    public static func from(rawValue: Swift.UInt32) -> EvolisFramework.State.MajorState
+    public static func from(rawValue: Swift.UInt32) -> EvolisFramework.PrinterState.MajorState
     public init?(rawValue: Swift.UInt32)
-    public typealias AllCases = [EvolisFramework.State.MajorState]
+    public typealias AllCases = [EvolisFramework.PrinterState.MajorState]
     public typealias RawValue = Swift.UInt32
-    public static var allCases: [EvolisFramework.State.MajorState] {
+    public static var allCases: [EvolisFramework.PrinterState.MajorState] {
       get
     }
     public var rawValue: Swift.UInt32 {
@@ -498,22 +453,67 @@ public class State {
     case AVANSIA_OPT_MAGNETIC_JIS2
     case DEF_FEEDER_OPEN
     case ERR_FEEDER_OPEN
-    public static func from(rawValue: Swift.UInt32) -> EvolisFramework.State.MinorState
+    public static func from(rawValue: Swift.UInt32) -> EvolisFramework.PrinterState.MinorState
     public init?(rawValue: Swift.UInt32)
-    public typealias AllCases = [EvolisFramework.State.MinorState]
+    public typealias AllCases = [EvolisFramework.PrinterState.MinorState]
     public typealias RawValue = Swift.UInt32
-    public static var allCases: [EvolisFramework.State.MinorState] {
+    public static var allCases: [EvolisFramework.PrinterState.MinorState] {
       get
     }
     public var rawValue: Swift.UInt32 {
       get
     }
   }
-  public init(_ ma: EvolisFramework.State.MajorState, _ mi: EvolisFramework.State.MinorState)
+  public init(_ ma: EvolisFramework.PrinterState.MajorState, _ mi: EvolisFramework.PrinterState.MinorState)
   public init(_ ma: Swift.UInt32, _ mi: Swift.UInt32)
-  public func getMajorState() -> EvolisFramework.State.MajorState
-  public func getMinorState() -> EvolisFramework.State.MinorState
+  public func getMajorState() -> EvolisFramework.PrinterState.MajorState
+  public func getMinorState() -> EvolisFramework.PrinterState.MinorState
   @objc deinit
+}
+public enum PrinterType : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
+  case AUTO
+  case EVOLIS
+  case AVANSIA
+  public init?(rawValue: Swift.UInt32)
+  public typealias AllCases = [EvolisFramework.PrinterType]
+  public typealias RawValue = Swift.UInt32
+  public static var allCases: [EvolisFramework.PrinterType] {
+    get
+  }
+  public var rawValue: Swift.UInt32 {
+    get
+  }
+}
+public enum Link : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
+  case INVALID
+  case TCP
+  case USB
+  case FILE
+  public init?(rawValue: Swift.UInt32)
+  public typealias AllCases = [EvolisFramework.Link]
+  public typealias RawValue = Swift.UInt32
+  public static var allCases: [EvolisFramework.Link] {
+    get
+  }
+  public var rawValue: Swift.UInt32 {
+    get
+  }
+}
+public enum LogLevel : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
+  case TRACE
+  case DEBUG
+  case INFO
+  case WARNING
+  case ERROR
+  public init?(rawValue: Swift.UInt32)
+  public typealias AllCases = [EvolisFramework.LogLevel]
+  public typealias RawValue = Swift.UInt32
+  public static var allCases: [EvolisFramework.LogLevel] {
+    get
+  }
+  public var rawValue: Swift.UInt32 {
+    get
+  }
 }
 public enum SettingKey : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case Unknown
@@ -738,273 +738,6 @@ public enum RwCardType : Swift.Int32 {
     get
   }
 }
-public struct Status {
-  public enum CfgFlag : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
-    case CFG_X01
-    case CFG_X02
-    case CFG_R02
-    case CFG_X04
-    case CFG_EXTENSION_1
-    case CFG_S01
-    case CFG_X07
-    case CFG_KC200
-    case CFG_WIFI
-    case CFG_ETHERNET
-    case CFG_USB_OVER_IP
-    case CFG_FLIP
-    case CFG_CONTACTLESS
-    case CFG_SMART
-    case CFG_MAGNETIC
-    case CFG_REWRITE
-    case CFG_FEED_MANUALLY
-    case CFG_FEED_BY_CDE
-    case CFG_FEED_BY_FEEDER
-    case CFG_EJECT_REVERSE
-    case CFG_FEED_CDE_REVERSE
-    case CFG_EXTENDED_RESOLUTION
-    case CFG_LCD
-    case CFG_LOCK
-    case CFG_OEM
-    case CFG_JIS_MAG_HEAD
-    case CFG_REJECT_SLOT
-    case CFG_IO_EXT
-    case CFG_MONO_ONLY
-    case CFG_KC100
-    case CFG_KINE
-    case CFG_WIFI_ENA
-    public init?(rawValue: Swift.UInt32)
-    public typealias AllCases = [EvolisFramework.Status.CfgFlag]
-    public typealias RawValue = Swift.UInt32
-    public static var allCases: [EvolisFramework.Status.CfgFlag] {
-      get
-    }
-    public var rawValue: Swift.UInt32 {
-      get
-    }
-  }
-  public enum InfFlag : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
-    case INF_CLAIM
-    case INF_CARD_HOPPER
-    case INF_CARD_FEEDER
-    case INF_CARD_FLIP
-    case INF_CARD_CONTACTLESS
-    case INF_CARD_SMART
-    case INF_CARD_PRINT
-    case INF_CARD_EJECT
-    case INF_PRINTER_MASTER
-    case INF_PCSVC_LOCKED
-    case INF_SLEEP_MODE
-    case INF_UNKNOWN_RIBBON
-    case INF_RIBBON_LOW
-    case INF_CLEANING_MANDATORY
-    case INF_CLEANING
-    case INF_RESET
-    case INF_CLEAN_OUTWARRANTY
-    case INF_CLEAN_LAST_OUTWARRANTY
-    case INF_CLEAN_2ND_PASS
-    case INF_READY_FOR_CLEANING
-    case INF_CLEANING_ADVANCED
-    case INF_WRONG_ZONE_RIBBON
-    case INF_RIBBON_CHANGED
-    case INF_CLEANING_REQUIRED
-    case INF_PRINTING_RUNNING
-    case INF_ENCODING_RUNNING
-    case INF_CLEANING_RUNNING
-    case INF_WRONG_ZONE_ALERT
-    case INF_WRONG_ZONE_EXPIRED
-    case INF_SYNCH_PRINT_CENTER
-    case INF_UPDATING_FIRMWARE
-    case INF_BUSY
-    public init?(rawValue: Swift.UInt32)
-    public typealias AllCases = [EvolisFramework.Status.InfFlag]
-    public typealias RawValue = Swift.UInt32
-    public static var allCases: [EvolisFramework.Status.InfFlag] {
-      get
-    }
-    public var rawValue: Swift.UInt32 {
-      get
-    }
-  }
-  public enum WarFlag : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
-    case WAR_POWER_SUPPLY
-    case WAR_REMOVE_RIBBON
-    case WAR_RECEPTACLE_OPEN
-    case WAR_REJECT_BOX_FULL
-    case WAR_CARD_ON_EJECT
-    case WAR_WAIT_CARD
-    case WAR_FEEDER_EMPTY
-    case WAR_COOLING
-    case WAR_HOPPER_FULL
-    case WAR_RIBBON_ENDED
-    case WAR_PRINTER_LOCKED
-    case WAR_COVER_OPEN
-    case WAR_NO_RIBBON
-    case WAR_UNSUPPORTED_RIBBON
-    case WAR_NO_CLEAR
-    case WAR_CLEAR_END
-    case WAR_CLEAR_UNSUPPORTED
-    case WAR_REJECT_BOX_COVER_OPEN
-    case WAR_EPS_NO_AUTO
-    case WAR_FEEDER_OPEN
-    public init?(rawValue: Swift.UInt32)
-    public typealias AllCases = [EvolisFramework.Status.WarFlag]
-    public typealias RawValue = Swift.UInt32
-    public static var allCases: [EvolisFramework.Status.WarFlag] {
-      get
-    }
-    public var rawValue: Swift.UInt32 {
-      get
-    }
-  }
-  public enum ErrFlag : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
-    case ERR_HEAD_TEMP
-    case ERR_NO_OPTION
-    case ERR_FEEDER_ERROR
-    case ERR_RIBBON_ERROR
-    case ERR_COVER_OPEN
-    case ERR_MECHANICAL
-    case ERR_REJECT_BOX_FULL
-    case ERR_BAD_RIBBON
-    case ERR_RIBBON_ENDED
-    case ERR_HOPPER_FULL
-    case ERR_BLANK_TRACK
-    case ERR_MAGNETIC_DATA
-    case ERR_READ_MAGNETIC
-    case ERR_WRITE_MAGNETIC
-    case ERR_FEATURE
-    case ERR_RET_TEMPERATURE
-    case ERR_CLEAR_ERROR
-    case ERR_CLEAR_ENDED
-    case ERR_BAD_CLEAR
-    case ERR_REJECT_BOX_COVER_OPEN
-    case ERR_CARD_ON_EJECT
-    case ERR_NO_CARD_INSERTED
-    case ERR_FEEDER_OPEN
-    public init?(rawValue: Swift.UInt32)
-    public typealias AllCases = [EvolisFramework.Status.ErrFlag]
-    public typealias RawValue = Swift.UInt32
-    public static var allCases: [EvolisFramework.Status.ErrFlag] {
-      get
-    }
-    public var rawValue: Swift.UInt32 {
-      get
-    }
-  }
-  public enum Ex1Flag : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
-    case EX1_CFG_EXTENSION_2
-    case EX1_CFG_KIOSK
-    case EX1_CFG_QUANTUM
-    case EX1_CFG_SECURION
-    case EX1_CFG_DUALYS
-    case EX1_CFG_PEBBLE
-    case EX1_CFG_SCANNER
-    case EX1_CFG_MEM_LAMINATION_MODULE_2
-    case EX1_INF_NO_LAMINATION_TO_DO
-    case EX1_CFG_SEICO_FEEDER
-    case EX1_CFG_KYTRONIC_FEEDER
-    case EX1_CFG_HOPPER
-    case EX1_CFG_LAMINATOR
-    case EX1_INF_LAMI_ALLOW_TO_INSERT
-    case EX1_INF_LAMINATING_RUNNING
-    case EX1_INF_CLEAN_REMINDER
-    case EX1_INF_LAMI_TEMP_NOT_READY
-    case EX1_INF_SYNCHRONOUS_MODE
-    case EX1_INF_LCD_BUT_ACK
-    case EX1_INF_LCD_BUT_OK
-    case EX1_INF_LCD_BUT_RETRY
-    case EX1_INF_LCD_BUT_CANCEL
-    case EX1_CFG_BEZEL
-    case EX1_INF_FEEDER_NEAR_EMPTY
-    case EX1_INF_FEEDER1_EMPTY
-    case EX1_INF_FEEDER2_EMPTY
-    case EX1_INF_FEEDER3_EMPTY
-    case EX1_INF_FEEDER4_EMPTY
-    case EX1_INF_FEEDER1_NEAR_EMPTY
-    case EX1_INF_FEEDER2_NEAR_EMPTY
-    case EX1_INF_FEEDER3_NEAR_EMPTY
-    case EX1_INF_FEEDER4_NEAR_EMPTY
-    public init?(rawValue: Swift.UInt32)
-    public typealias AllCases = [EvolisFramework.Status.Ex1Flag]
-    public typealias RawValue = Swift.UInt32
-    public static var allCases: [EvolisFramework.Status.Ex1Flag] {
-      get
-    }
-    public var rawValue: Swift.UInt32 {
-      get
-    }
-  }
-  public enum Ex2Flag : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
-    case EX2_CFG_EXTENSION_3
-    case EX2_INF_SA_PROCESSING
-    case EX2_INF_SCP_PROCESSING
-    case EX2_INF_OPT_PROCESSING
-    case EX2_INF_X08_PRINTER_UNLOCKED
-    case EX2_INF_X08_FEEDER_OPEN
-    case EX2_INF_X08_EJECTBOX_FULL
-    case EX2_INF_X08_PRINT_UNLOCKED
-    case EX2_CFG_LAMINATION_MODULE_2
-    case EX2_INF_LAMINATE_UNKNOWN
-    case EX2_INF_LAMINATE_LOW
-    case EX2_INF_LAMI_CARD
-    case EX2_INF_LAMI_CLEANING_RUNNING
-    case EX2_INF_LAMI_UPDATING_FIRMWARE
-    case EX2_INF_LAMI_READY_FOR_CLEANING
-    case EX2_INF_CARD_REAR
-    case EX2_DEF_NO_LAMINATE
-    case EX2_DEF_LAMI_COVER_OPEN
-    case EX2_DEF_LAMINATE_END
-    case EX2_DEF_LAMI_HOPPER_FULL
-    case EX2_DEF_LAMINATE_UNSUPPORTED
-    case EX2_INF_CLEAR_UNKNOWN
-    case EX2_INF_CLEAR_LOW
-    case EX2_INF_WRONG_ZONE_CLEAR
-    case EX2_ERR_LAMI_TEMPERATURE
-    case EX2_ERR_LAMINATE
-    case EX2_ERR_LAMI_MECHANICAL
-    case EX2_ERR_LAMINATE_END
-    case EX2_ERR_LAMI_COVER_OPEN
-    case EX2_INF_CLEAR_CHANGED
-    case EX2_INF_WRONG_ZONE_CLEAR_ALERT
-    case EX2_INF_WRONG_ZONE_CLEAR_EXPIRED
-    public init?(rawValue: Swift.UInt32)
-    public typealias AllCases = [EvolisFramework.Status.Ex2Flag]
-    public typealias RawValue = Swift.UInt32
-    public static var allCases: [EvolisFramework.Status.Ex2Flag] {
-      get
-    }
-    public var rawValue: Swift.UInt32 {
-      get
-    }
-  }
-  public enum Ex3Flag : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
-    case EX3_CFG_EXTENSION_4
-    case EX3_INF_RETRANSFER_RUNNING
-    case EX3_INF_HEATING
-    case EX3_INF_CARD_MAN_FEED
-    public init?(rawValue: Swift.UInt32)
-    public typealias AllCases = [EvolisFramework.Status.Ex3Flag]
-    public typealias RawValue = Swift.UInt32
-    public static var allCases: [EvolisFramework.Status.Ex3Flag] {
-      get
-    }
-    public var rawValue: Swift.UInt32 {
-      get
-    }
-  }
-  public var config: Swift.UInt32
-  public var information: Swift.UInt32
-  public var warning: Swift.UInt32
-  public var error: Swift.UInt32
-  public var exts: [Swift.UInt32]
-  public var session: Swift.UInt16
-  public func isOn(_ flag: EvolisFramework.Status.CfgFlag) -> Swift.Bool
-  public func isOn(_ flag: EvolisFramework.Status.InfFlag) -> Swift.Bool
-  public func isOn(_ flag: EvolisFramework.Status.WarFlag) -> Swift.Bool
-  public func isOn(_ flag: EvolisFramework.Status.ErrFlag) -> Swift.Bool
-  public func isOn(_ flag: EvolisFramework.Status.Ex1Flag) -> Swift.Bool
-  public func isOn(_ flag: EvolisFramework.Status.Ex2Flag) -> Swift.Bool
-  public func isOn(_ flag: EvolisFramework.Status.Ex3Flag) -> Swift.Bool
-}
 public enum Mark : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case INVALID
   case Evolis
@@ -1106,6 +839,273 @@ public enum Model : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
     get
   }
 }
+public struct PrinterStatus {
+  public enum CfgFlag : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
+    case CFG_X01
+    case CFG_X02
+    case CFG_R02
+    case CFG_X04
+    case CFG_EXTENSION_1
+    case CFG_S01
+    case CFG_X07
+    case CFG_KC200
+    case CFG_WIFI
+    case CFG_ETHERNET
+    case CFG_USB_OVER_IP
+    case CFG_FLIP
+    case CFG_CONTACTLESS
+    case CFG_SMART
+    case CFG_MAGNETIC
+    case CFG_REWRITE
+    case CFG_FEED_MANUALLY
+    case CFG_FEED_BY_CDE
+    case CFG_FEED_BY_FEEDER
+    case CFG_EJECT_REVERSE
+    case CFG_FEED_CDE_REVERSE
+    case CFG_EXTENDED_RESOLUTION
+    case CFG_LCD
+    case CFG_LOCK
+    case CFG_OEM
+    case CFG_JIS_MAG_HEAD
+    case CFG_REJECT_SLOT
+    case CFG_IO_EXT
+    case CFG_MONO_ONLY
+    case CFG_KC100
+    case CFG_KINE
+    case CFG_WIFI_ENA
+    public init?(rawValue: Swift.UInt32)
+    public typealias AllCases = [EvolisFramework.PrinterStatus.CfgFlag]
+    public typealias RawValue = Swift.UInt32
+    public static var allCases: [EvolisFramework.PrinterStatus.CfgFlag] {
+      get
+    }
+    public var rawValue: Swift.UInt32 {
+      get
+    }
+  }
+  public enum InfFlag : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
+    case INF_CLAIM
+    case INF_CARD_HOPPER
+    case INF_CARD_FEEDER
+    case INF_CARD_FLIP
+    case INF_CARD_CONTACTLESS
+    case INF_CARD_SMART
+    case INF_CARD_PRINT
+    case INF_CARD_EJECT
+    case INF_PRINTER_MASTER
+    case INF_PCSVC_LOCKED
+    case INF_SLEEP_MODE
+    case INF_UNKNOWN_RIBBON
+    case INF_RIBBON_LOW
+    case INF_CLEANING_MANDATORY
+    case INF_CLEANING
+    case INF_RESET
+    case INF_CLEAN_OUTWARRANTY
+    case INF_CLEAN_LAST_OUTWARRANTY
+    case INF_CLEAN_2ND_PASS
+    case INF_READY_FOR_CLEANING
+    case INF_CLEANING_ADVANCED
+    case INF_WRONG_ZONE_RIBBON
+    case INF_RIBBON_CHANGED
+    case INF_CLEANING_REQUIRED
+    case INF_PRINTING_RUNNING
+    case INF_ENCODING_RUNNING
+    case INF_CLEANING_RUNNING
+    case INF_WRONG_ZONE_ALERT
+    case INF_WRONG_ZONE_EXPIRED
+    case INF_SYNCH_PRINT_CENTER
+    case INF_UPDATING_FIRMWARE
+    case INF_BUSY
+    public init?(rawValue: Swift.UInt32)
+    public typealias AllCases = [EvolisFramework.PrinterStatus.InfFlag]
+    public typealias RawValue = Swift.UInt32
+    public static var allCases: [EvolisFramework.PrinterStatus.InfFlag] {
+      get
+    }
+    public var rawValue: Swift.UInt32 {
+      get
+    }
+  }
+  public enum WarFlag : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
+    case WAR_POWER_SUPPLY
+    case WAR_REMOVE_RIBBON
+    case WAR_RECEPTACLE_OPEN
+    case WAR_REJECT_BOX_FULL
+    case WAR_CARD_ON_EJECT
+    case WAR_WAIT_CARD
+    case WAR_FEEDER_EMPTY
+    case WAR_COOLING
+    case WAR_HOPPER_FULL
+    case WAR_RIBBON_ENDED
+    case WAR_PRINTER_LOCKED
+    case WAR_COVER_OPEN
+    case WAR_NO_RIBBON
+    case WAR_UNSUPPORTED_RIBBON
+    case WAR_NO_CLEAR
+    case WAR_CLEAR_END
+    case WAR_CLEAR_UNSUPPORTED
+    case WAR_REJECT_BOX_COVER_OPEN
+    case WAR_EPS_NO_AUTO
+    case WAR_FEEDER_OPEN
+    public init?(rawValue: Swift.UInt32)
+    public typealias AllCases = [EvolisFramework.PrinterStatus.WarFlag]
+    public typealias RawValue = Swift.UInt32
+    public static var allCases: [EvolisFramework.PrinterStatus.WarFlag] {
+      get
+    }
+    public var rawValue: Swift.UInt32 {
+      get
+    }
+  }
+  public enum ErrFlag : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
+    case ERR_HEAD_TEMP
+    case ERR_NO_OPTION
+    case ERR_FEEDER_ERROR
+    case ERR_RIBBON_ERROR
+    case ERR_COVER_OPEN
+    case ERR_MECHANICAL
+    case ERR_REJECT_BOX_FULL
+    case ERR_BAD_RIBBON
+    case ERR_RIBBON_ENDED
+    case ERR_HOPPER_FULL
+    case ERR_BLANK_TRACK
+    case ERR_MAGNETIC_DATA
+    case ERR_READ_MAGNETIC
+    case ERR_WRITE_MAGNETIC
+    case ERR_FEATURE
+    case ERR_RET_TEMPERATURE
+    case ERR_CLEAR_ERROR
+    case ERR_CLEAR_ENDED
+    case ERR_BAD_CLEAR
+    case ERR_REJECT_BOX_COVER_OPEN
+    case ERR_CARD_ON_EJECT
+    case ERR_NO_CARD_INSERTED
+    case ERR_FEEDER_OPEN
+    public init?(rawValue: Swift.UInt32)
+    public typealias AllCases = [EvolisFramework.PrinterStatus.ErrFlag]
+    public typealias RawValue = Swift.UInt32
+    public static var allCases: [EvolisFramework.PrinterStatus.ErrFlag] {
+      get
+    }
+    public var rawValue: Swift.UInt32 {
+      get
+    }
+  }
+  public enum Ex1Flag : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
+    case EX1_CFG_EXTENSION_2
+    case EX1_CFG_KIOSK
+    case EX1_CFG_QUANTUM
+    case EX1_CFG_SECURION
+    case EX1_CFG_DUALYS
+    case EX1_CFG_PEBBLE
+    case EX1_CFG_SCANNER
+    case EX1_CFG_MEM_LAMINATION_MODULE_2
+    case EX1_INF_NO_LAMINATION_TO_DO
+    case EX1_CFG_SEICO_FEEDER
+    case EX1_CFG_KYTRONIC_FEEDER
+    case EX1_CFG_HOPPER
+    case EX1_CFG_LAMINATOR
+    case EX1_INF_LAMI_ALLOW_TO_INSERT
+    case EX1_INF_LAMINATING_RUNNING
+    case EX1_INF_CLEAN_REMINDER
+    case EX1_INF_LAMI_TEMP_NOT_READY
+    case EX1_INF_SYNCHRONOUS_MODE
+    case EX1_INF_LCD_BUT_ACK
+    case EX1_INF_LCD_BUT_OK
+    case EX1_INF_LCD_BUT_RETRY
+    case EX1_INF_LCD_BUT_CANCEL
+    case EX1_CFG_BEZEL
+    case EX1_INF_FEEDER_NEAR_EMPTY
+    case EX1_INF_FEEDER1_EMPTY
+    case EX1_INF_FEEDER2_EMPTY
+    case EX1_INF_FEEDER3_EMPTY
+    case EX1_INF_FEEDER4_EMPTY
+    case EX1_INF_FEEDER1_NEAR_EMPTY
+    case EX1_INF_FEEDER2_NEAR_EMPTY
+    case EX1_INF_FEEDER3_NEAR_EMPTY
+    case EX1_INF_FEEDER4_NEAR_EMPTY
+    public init?(rawValue: Swift.UInt32)
+    public typealias AllCases = [EvolisFramework.PrinterStatus.Ex1Flag]
+    public typealias RawValue = Swift.UInt32
+    public static var allCases: [EvolisFramework.PrinterStatus.Ex1Flag] {
+      get
+    }
+    public var rawValue: Swift.UInt32 {
+      get
+    }
+  }
+  public enum Ex2Flag : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
+    case EX2_CFG_EXTENSION_3
+    case EX2_INF_SA_PROCESSING
+    case EX2_INF_SCP_PROCESSING
+    case EX2_INF_OPT_PROCESSING
+    case EX2_INF_X08_PRINTER_UNLOCKED
+    case EX2_INF_X08_FEEDER_OPEN
+    case EX2_INF_X08_EJECTBOX_FULL
+    case EX2_INF_X08_PRINT_UNLOCKED
+    case EX2_CFG_LAMINATION_MODULE_2
+    case EX2_INF_LAMINATE_UNKNOWN
+    case EX2_INF_LAMINATE_LOW
+    case EX2_INF_LAMI_CARD
+    case EX2_INF_LAMI_CLEANING_RUNNING
+    case EX2_INF_LAMI_UPDATING_FIRMWARE
+    case EX2_INF_LAMI_READY_FOR_CLEANING
+    case EX2_INF_CARD_REAR
+    case EX2_DEF_NO_LAMINATE
+    case EX2_DEF_LAMI_COVER_OPEN
+    case EX2_DEF_LAMINATE_END
+    case EX2_DEF_LAMI_HOPPER_FULL
+    case EX2_DEF_LAMINATE_UNSUPPORTED
+    case EX2_INF_CLEAR_UNKNOWN
+    case EX2_INF_CLEAR_LOW
+    case EX2_INF_WRONG_ZONE_CLEAR
+    case EX2_ERR_LAMI_TEMPERATURE
+    case EX2_ERR_LAMINATE
+    case EX2_ERR_LAMI_MECHANICAL
+    case EX2_ERR_LAMINATE_END
+    case EX2_ERR_LAMI_COVER_OPEN
+    case EX2_INF_CLEAR_CHANGED
+    case EX2_INF_WRONG_ZONE_CLEAR_ALERT
+    case EX2_INF_WRONG_ZONE_CLEAR_EXPIRED
+    public init?(rawValue: Swift.UInt32)
+    public typealias AllCases = [EvolisFramework.PrinterStatus.Ex2Flag]
+    public typealias RawValue = Swift.UInt32
+    public static var allCases: [EvolisFramework.PrinterStatus.Ex2Flag] {
+      get
+    }
+    public var rawValue: Swift.UInt32 {
+      get
+    }
+  }
+  public enum Ex3Flag : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
+    case EX3_CFG_EXTENSION_4
+    case EX3_INF_RETRANSFER_RUNNING
+    case EX3_INF_HEATING
+    case EX3_INF_CARD_MAN_FEED
+    public init?(rawValue: Swift.UInt32)
+    public typealias AllCases = [EvolisFramework.PrinterStatus.Ex3Flag]
+    public typealias RawValue = Swift.UInt32
+    public static var allCases: [EvolisFramework.PrinterStatus.Ex3Flag] {
+      get
+    }
+    public var rawValue: Swift.UInt32 {
+      get
+    }
+  }
+  public var config: Swift.UInt32
+  public var information: Swift.UInt32
+  public var warning: Swift.UInt32
+  public var error: Swift.UInt32
+  public var exts: [Swift.UInt32]
+  public var session: Swift.UInt16
+  public func isOn(_ flag: EvolisFramework.PrinterStatus.CfgFlag) -> Swift.Bool
+  public func isOn(_ flag: EvolisFramework.PrinterStatus.InfFlag) -> Swift.Bool
+  public func isOn(_ flag: EvolisFramework.PrinterStatus.WarFlag) -> Swift.Bool
+  public func isOn(_ flag: EvolisFramework.PrinterStatus.ErrFlag) -> Swift.Bool
+  public func isOn(_ flag: EvolisFramework.PrinterStatus.Ex1Flag) -> Swift.Bool
+  public func isOn(_ flag: EvolisFramework.PrinterStatus.Ex2Flag) -> Swift.Bool
+  public func isOn(_ flag: EvolisFramework.PrinterStatus.Ex3Flag) -> Swift.Bool
+}
 public enum RibbonType : Swift.Int32, Swift.CaseIterable, Swift.Codable {
   case UNKNOWN
   case YMCKO
@@ -1169,6 +1169,12 @@ extension EvolisFramework.OutputTray : Swift.RawRepresentable {}
 extension EvolisFramework.Feeder : Swift.Equatable {}
 extension EvolisFramework.Feeder : Swift.Hashable {}
 extension EvolisFramework.Feeder : Swift.RawRepresentable {}
+extension EvolisFramework.PrinterState.MajorState : Swift.Equatable {}
+extension EvolisFramework.PrinterState.MajorState : Swift.Hashable {}
+extension EvolisFramework.PrinterState.MajorState : Swift.RawRepresentable {}
+extension EvolisFramework.PrinterState.MinorState : Swift.Equatable {}
+extension EvolisFramework.PrinterState.MinorState : Swift.Hashable {}
+extension EvolisFramework.PrinterState.MinorState : Swift.RawRepresentable {}
 extension EvolisFramework.PrinterType : Swift.Equatable {}
 extension EvolisFramework.PrinterType : Swift.Hashable {}
 extension EvolisFramework.PrinterType : Swift.RawRepresentable {}
@@ -1178,12 +1184,6 @@ extension EvolisFramework.Link : Swift.RawRepresentable {}
 extension EvolisFramework.LogLevel : Swift.Equatable {}
 extension EvolisFramework.LogLevel : Swift.Hashable {}
 extension EvolisFramework.LogLevel : Swift.RawRepresentable {}
-extension EvolisFramework.State.MajorState : Swift.Equatable {}
-extension EvolisFramework.State.MajorState : Swift.Hashable {}
-extension EvolisFramework.State.MajorState : Swift.RawRepresentable {}
-extension EvolisFramework.State.MinorState : Swift.Equatable {}
-extension EvolisFramework.State.MinorState : Swift.Hashable {}
-extension EvolisFramework.State.MinorState : Swift.RawRepresentable {}
 extension EvolisFramework.SettingKey : Swift.Equatable {}
 extension EvolisFramework.SettingKey : Swift.Hashable {}
 extension EvolisFramework.SettingKey : Swift.RawRepresentable {}
@@ -1196,27 +1196,6 @@ extension EvolisFramework.ErrorManagement : Swift.RawRepresentable {}
 extension EvolisFramework.RwCardType : Swift.Equatable {}
 extension EvolisFramework.RwCardType : Swift.Hashable {}
 extension EvolisFramework.RwCardType : Swift.RawRepresentable {}
-extension EvolisFramework.Status.CfgFlag : Swift.Equatable {}
-extension EvolisFramework.Status.CfgFlag : Swift.Hashable {}
-extension EvolisFramework.Status.CfgFlag : Swift.RawRepresentable {}
-extension EvolisFramework.Status.InfFlag : Swift.Equatable {}
-extension EvolisFramework.Status.InfFlag : Swift.Hashable {}
-extension EvolisFramework.Status.InfFlag : Swift.RawRepresentable {}
-extension EvolisFramework.Status.WarFlag : Swift.Equatable {}
-extension EvolisFramework.Status.WarFlag : Swift.Hashable {}
-extension EvolisFramework.Status.WarFlag : Swift.RawRepresentable {}
-extension EvolisFramework.Status.ErrFlag : Swift.Equatable {}
-extension EvolisFramework.Status.ErrFlag : Swift.Hashable {}
-extension EvolisFramework.Status.ErrFlag : Swift.RawRepresentable {}
-extension EvolisFramework.Status.Ex1Flag : Swift.Equatable {}
-extension EvolisFramework.Status.Ex1Flag : Swift.Hashable {}
-extension EvolisFramework.Status.Ex1Flag : Swift.RawRepresentable {}
-extension EvolisFramework.Status.Ex2Flag : Swift.Equatable {}
-extension EvolisFramework.Status.Ex2Flag : Swift.Hashable {}
-extension EvolisFramework.Status.Ex2Flag : Swift.RawRepresentable {}
-extension EvolisFramework.Status.Ex3Flag : Swift.Equatable {}
-extension EvolisFramework.Status.Ex3Flag : Swift.Hashable {}
-extension EvolisFramework.Status.Ex3Flag : Swift.RawRepresentable {}
 extension EvolisFramework.Mark : Swift.Equatable {}
 extension EvolisFramework.Mark : Swift.Hashable {}
 extension EvolisFramework.Mark : Swift.RawRepresentable {}
@@ -1226,6 +1205,27 @@ extension EvolisFramework.ReturnCode : Swift.RawRepresentable {}
 extension EvolisFramework.Model : Swift.Equatable {}
 extension EvolisFramework.Model : Swift.Hashable {}
 extension EvolisFramework.Model : Swift.RawRepresentable {}
+extension EvolisFramework.PrinterStatus.CfgFlag : Swift.Equatable {}
+extension EvolisFramework.PrinterStatus.CfgFlag : Swift.Hashable {}
+extension EvolisFramework.PrinterStatus.CfgFlag : Swift.RawRepresentable {}
+extension EvolisFramework.PrinterStatus.InfFlag : Swift.Equatable {}
+extension EvolisFramework.PrinterStatus.InfFlag : Swift.Hashable {}
+extension EvolisFramework.PrinterStatus.InfFlag : Swift.RawRepresentable {}
+extension EvolisFramework.PrinterStatus.WarFlag : Swift.Equatable {}
+extension EvolisFramework.PrinterStatus.WarFlag : Swift.Hashable {}
+extension EvolisFramework.PrinterStatus.WarFlag : Swift.RawRepresentable {}
+extension EvolisFramework.PrinterStatus.ErrFlag : Swift.Equatable {}
+extension EvolisFramework.PrinterStatus.ErrFlag : Swift.Hashable {}
+extension EvolisFramework.PrinterStatus.ErrFlag : Swift.RawRepresentable {}
+extension EvolisFramework.PrinterStatus.Ex1Flag : Swift.Equatable {}
+extension EvolisFramework.PrinterStatus.Ex1Flag : Swift.Hashable {}
+extension EvolisFramework.PrinterStatus.Ex1Flag : Swift.RawRepresentable {}
+extension EvolisFramework.PrinterStatus.Ex2Flag : Swift.Equatable {}
+extension EvolisFramework.PrinterStatus.Ex2Flag : Swift.Hashable {}
+extension EvolisFramework.PrinterStatus.Ex2Flag : Swift.RawRepresentable {}
+extension EvolisFramework.PrinterStatus.Ex3Flag : Swift.Equatable {}
+extension EvolisFramework.PrinterStatus.Ex3Flag : Swift.Hashable {}
+extension EvolisFramework.PrinterStatus.Ex3Flag : Swift.RawRepresentable {}
 extension EvolisFramework.RibbonType : Swift.Equatable {}
 extension EvolisFramework.RibbonType : Swift.Hashable {}
 extension EvolisFramework.RibbonType : Swift.RawRepresentable {}
