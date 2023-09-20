@@ -198,9 +198,9 @@ public enum CardFace : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   public static let SESSION_WAIT: Swift.Int
   public static let SESSION_TIMEOUT: Swift.Int
   public static func getVersion() -> Swift.String
-  public static func setLogLevel(level: EvolisFramework.LogLevel)
-  public static func setLogPath(path: Swift.String)
-  public static func setConsoleOutput(on: Swift.Bool)
+  public static func setLogLevel(_ level: EvolisFramework.LogLevel)
+  public static func setLogPath(_ path: Swift.String)
+  public static func setConsoleOutput(_ on: Swift.Bool)
   @objc deinit
 }
 public enum InputTray : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
@@ -829,6 +829,11 @@ public enum Model : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case Plasco_Primacy_2_LE
   case Identisys_Primacy_2_SE
   case Evolis_Avansia
+  case Evolis_Agilia
+  case Evolis_Excelio
+  case Evolis_Zenius_2_Classic
+  case Evolis_Zenius_2_Expert
+  case Evolis_Quantum2
   public init?(rawValue: Swift.UInt32)
   public typealias AllCases = [EvolisFramework.Model]
   public typealias RawValue = Swift.UInt32
