@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-macos13.3 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name EvolisFramework
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-macos14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name EvolisFramework
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import EvolisFramework
 import EvolisSDK
@@ -8,6 +8,7 @@ import Foundation
 import Swift
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @_hasMissingDesignatedInitializers public class NetDevice {
   public var version: Swift.Int32
   public var pid: Swift.Int32
@@ -830,10 +831,6 @@ public enum Model : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case Identisys_Primacy_2_SE
   case Evolis_Avansia
   case Evolis_Agilia
-  case Evolis_Excelio
-  case Evolis_Zenius_2_Classic
-  case Evolis_Zenius_2_Expert
-  case Evolis_Quantum2
   public init?(rawValue: Swift.UInt32)
   public typealias AllCases = [EvolisFramework.Model]
   public typealias RawValue = Swift.UInt32
@@ -1087,6 +1084,9 @@ public struct PrinterStatus {
     case EX3_INF_RETRANSFER_RUNNING
     case EX3_INF_HEATING
     case EX3_INF_CARD_MAN_FEED
+    case EX3_INF_HEAT_ROLLER_WORN_OUT
+    case EX3_INF_PRE_HEATING_PRINT_HEAD
+    case EX3_ERR_PRE_HEATING_PRINT_HEAD
     public init?(rawValue: Swift.UInt32)
     public typealias AllCases = [EvolisFramework.PrinterStatus.Ex3Flag]
     public typealias RawValue = Swift.UInt32

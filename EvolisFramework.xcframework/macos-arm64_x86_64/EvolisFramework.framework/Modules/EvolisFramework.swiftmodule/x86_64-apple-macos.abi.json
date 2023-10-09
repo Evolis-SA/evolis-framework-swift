@@ -29462,154 +29462,6 @@
             "moduleName": "EvolisFramework"
           },
           {
-            "kind": "Var",
-            "name": "Evolis_Excelio",
-            "printedName": "Evolis_Excelio",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(EvolisFramework.Model.Type) -> EvolisFramework.Model",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Model",
-                    "printedName": "EvolisFramework.Model",
-                    "usr": "s:15EvolisFramework5ModelO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "EvolisFramework.Model.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Model",
-                        "printedName": "EvolisFramework.Model",
-                        "usr": "s:15EvolisFramework5ModelO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:15EvolisFramework5ModelO0A8_ExcelioyA2CmF",
-            "mangledName": "$s15EvolisFramework5ModelO0A8_ExcelioyA2CmF",
-            "moduleName": "EvolisFramework"
-          },
-          {
-            "kind": "Var",
-            "name": "Evolis_Zenius_2_Classic",
-            "printedName": "Evolis_Zenius_2_Classic",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(EvolisFramework.Model.Type) -> EvolisFramework.Model",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Model",
-                    "printedName": "EvolisFramework.Model",
-                    "usr": "s:15EvolisFramework5ModelO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "EvolisFramework.Model.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Model",
-                        "printedName": "EvolisFramework.Model",
-                        "usr": "s:15EvolisFramework5ModelO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:15EvolisFramework5ModelO0A17_Zenius_2_ClassicyA2CmF",
-            "mangledName": "$s15EvolisFramework5ModelO0A17_Zenius_2_ClassicyA2CmF",
-            "moduleName": "EvolisFramework"
-          },
-          {
-            "kind": "Var",
-            "name": "Evolis_Zenius_2_Expert",
-            "printedName": "Evolis_Zenius_2_Expert",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(EvolisFramework.Model.Type) -> EvolisFramework.Model",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Model",
-                    "printedName": "EvolisFramework.Model",
-                    "usr": "s:15EvolisFramework5ModelO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "EvolisFramework.Model.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Model",
-                        "printedName": "EvolisFramework.Model",
-                        "usr": "s:15EvolisFramework5ModelO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:15EvolisFramework5ModelO0A16_Zenius_2_ExpertyA2CmF",
-            "mangledName": "$s15EvolisFramework5ModelO0A16_Zenius_2_ExpertyA2CmF",
-            "moduleName": "EvolisFramework"
-          },
-          {
-            "kind": "Var",
-            "name": "Evolis_Quantum2",
-            "printedName": "Evolis_Quantum2",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(EvolisFramework.Model.Type) -> EvolisFramework.Model",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Model",
-                    "printedName": "EvolisFramework.Model",
-                    "usr": "s:15EvolisFramework5ModelO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "EvolisFramework.Model.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Model",
-                        "printedName": "EvolisFramework.Model",
-                        "usr": "s:15EvolisFramework5ModelO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:15EvolisFramework5ModelO0A9_Quantum2yA2CmF",
-            "mangledName": "$s15EvolisFramework5ModelO0A9_Quantum2yA2CmF",
-            "moduleName": "EvolisFramework"
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -38214,6 +38066,126 @@
                 "declKind": "EnumElement",
                 "usr": "s:15EvolisFramework13PrinterStatusV7Ex3FlagO21EX3_INF_CARD_MAN_FEEDyA2EmF",
                 "mangledName": "$s15EvolisFramework13PrinterStatusV7Ex3FlagO21EX3_INF_CARD_MAN_FEEDyA2EmF",
+                "moduleName": "EvolisFramework",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "EX3_INF_HEAT_ROLLER_WORN_OUT",
+                "printedName": "EX3_INF_HEAT_ROLLER_WORN_OUT",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(EvolisFramework.PrinterStatus.Ex3Flag.Type) -> EvolisFramework.PrinterStatus.Ex3Flag",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Ex3Flag",
+                        "printedName": "EvolisFramework.PrinterStatus.Ex3Flag",
+                        "usr": "s:15EvolisFramework13PrinterStatusV7Ex3FlagO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "EvolisFramework.PrinterStatus.Ex3Flag.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Ex3Flag",
+                            "printedName": "EvolisFramework.PrinterStatus.Ex3Flag",
+                            "usr": "s:15EvolisFramework13PrinterStatusV7Ex3FlagO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:15EvolisFramework13PrinterStatusV7Ex3FlagO28EX3_INF_HEAT_ROLLER_WORN_OUTyA2EmF",
+                "mangledName": "$s15EvolisFramework13PrinterStatusV7Ex3FlagO28EX3_INF_HEAT_ROLLER_WORN_OUTyA2EmF",
+                "moduleName": "EvolisFramework",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "EX3_INF_PRE_HEATING_PRINT_HEAD",
+                "printedName": "EX3_INF_PRE_HEATING_PRINT_HEAD",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(EvolisFramework.PrinterStatus.Ex3Flag.Type) -> EvolisFramework.PrinterStatus.Ex3Flag",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Ex3Flag",
+                        "printedName": "EvolisFramework.PrinterStatus.Ex3Flag",
+                        "usr": "s:15EvolisFramework13PrinterStatusV7Ex3FlagO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "EvolisFramework.PrinterStatus.Ex3Flag.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Ex3Flag",
+                            "printedName": "EvolisFramework.PrinterStatus.Ex3Flag",
+                            "usr": "s:15EvolisFramework13PrinterStatusV7Ex3FlagO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:15EvolisFramework13PrinterStatusV7Ex3FlagO30EX3_INF_PRE_HEATING_PRINT_HEADyA2EmF",
+                "mangledName": "$s15EvolisFramework13PrinterStatusV7Ex3FlagO30EX3_INF_PRE_HEATING_PRINT_HEADyA2EmF",
+                "moduleName": "EvolisFramework",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "EX3_ERR_PRE_HEATING_PRINT_HEAD",
+                "printedName": "EX3_ERR_PRE_HEATING_PRINT_HEAD",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(EvolisFramework.PrinterStatus.Ex3Flag.Type) -> EvolisFramework.PrinterStatus.Ex3Flag",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Ex3Flag",
+                        "printedName": "EvolisFramework.PrinterStatus.Ex3Flag",
+                        "usr": "s:15EvolisFramework13PrinterStatusV7Ex3FlagO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "EvolisFramework.PrinterStatus.Ex3Flag.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Ex3Flag",
+                            "printedName": "EvolisFramework.PrinterStatus.Ex3Flag",
+                            "usr": "s:15EvolisFramework13PrinterStatusV7Ex3FlagO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:15EvolisFramework13PrinterStatusV7Ex3FlagO30EX3_ERR_PRE_HEATING_PRINT_HEADyA2EmF",
+                "mangledName": "$s15EvolisFramework13PrinterStatusV7Ex3FlagO30EX3_ERR_PRE_HEATING_PRINT_HEADyA2EmF",
                 "moduleName": "EvolisFramework",
                 "declAttributes": [
                   "RawDocComment"
@@ -49026,30 +48998,247 @@
     {
       "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
       "kind": "IntegerLiteral",
-      "offset": 1399,
-      "length": 2,
-      "value": "35"
+      "offset": 347,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
       "kind": "IntegerLiteral",
-      "offset": 1437,
-      "length": 2,
-      "value": "36"
+      "offset": 373,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
       "kind": "IntegerLiteral",
-      "offset": 1474,
-      "length": 2,
-      "value": "37"
+      "offset": 400,
+      "length": 1,
+      "value": "2"
     },
     {
       "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
       "kind": "IntegerLiteral",
-      "offset": 1504,
+      "offset": 426,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 453,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 480,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 508,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 536,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 563,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 596,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 627,
       "length": 2,
-      "value": "38"
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 658,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 686,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 716,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 744,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 774,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 801,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 839,
+      "length": 2,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 867,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 893,
+      "length": 2,
+      "value": "19"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 921,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 951,
+      "length": 2,
+      "value": "21"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 981,
+      "length": 2,
+      "value": "22"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1020,
+      "length": 2,
+      "value": "23"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1054,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1084,
+      "length": 2,
+      "value": "25"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1112,
+      "length": 2,
+      "value": "26"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1143,
+      "length": 2,
+      "value": "27"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1169,
+      "length": 2,
+      "value": "28"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1202,
+      "length": 2,
+      "value": "29"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1242,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1276,
+      "length": 2,
+      "value": "31"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1313,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1342,
+      "length": 2,
+      "value": "33"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1370,
+      "length": 2,
+      "value": "34"
     },
     {
       "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
@@ -49297,307 +49486,6 @@
       "value": "34"
     },
     {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1399,
-      "length": 2,
-      "value": "35"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1437,
-      "length": 2,
-      "value": "36"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1474,
-      "length": 2,
-      "value": "37"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1504,
-      "length": 2,
-      "value": "38"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 347,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 373,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 400,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 426,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 453,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 480,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 508,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 536,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 563,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 596,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 627,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 658,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 686,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 716,
-      "length": 2,
-      "value": "13"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 744,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 774,
-      "length": 2,
-      "value": "15"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 801,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 839,
-      "length": 2,
-      "value": "17"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 867,
-      "length": 2,
-      "value": "18"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 893,
-      "length": 2,
-      "value": "19"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 921,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 951,
-      "length": 2,
-      "value": "21"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 981,
-      "length": 2,
-      "value": "22"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1020,
-      "length": 2,
-      "value": "23"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1054,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1084,
-      "length": 2,
-      "value": "25"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1112,
-      "length": 2,
-      "value": "26"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1143,
-      "length": 2,
-      "value": "27"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1169,
-      "length": 2,
-      "value": "28"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1202,
-      "length": 2,
-      "value": "29"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1242,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1276,
-      "length": 2,
-      "value": "31"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1313,
-      "length": 2,
-      "value": "32"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1342,
-      "length": 2,
-      "value": "33"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1370,
-      "length": 2,
-      "value": "34"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1399,
-      "length": 2,
-      "value": "35"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1437,
-      "length": 2,
-      "value": "36"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1474,
-      "length": 2,
-      "value": "37"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Model.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1504,
-      "length": 2,
-      "value": "38"
-    },
-    {
       "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/PrinterStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 495,
@@ -53219,30 +53107,23 @@
     {
       "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/PrinterStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 17413,
+      "offset": 17817,
       "length": 10,
-      "value": "0x80000000"
+      "value": "0x04000000"
     },
     {
       "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/PrinterStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 17510,
+      "offset": 17922,
       "length": 10,
-      "value": "0x40000000"
+      "value": "0x02000000"
     },
     {
       "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/PrinterStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 17587,
+      "offset": 18070,
       "length": 10,
-      "value": "0x20000000"
-    },
-    {
-      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/PrinterStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 17690,
-      "length": 10,
-      "value": "0x08000000"
+      "value": "0x01000000"
     },
     {
       "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/PrinterStatus.swift",
@@ -53275,49 +53156,119 @@
     {
       "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/PrinterStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 18384,
+      "offset": 17817,
+      "length": 10,
+      "value": "0x04000000"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/PrinterStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17922,
+      "length": 10,
+      "value": "0x02000000"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/PrinterStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18070,
+      "length": 10,
+      "value": "0x01000000"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/PrinterStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17413,
+      "length": 10,
+      "value": "0x80000000"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/PrinterStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17510,
+      "length": 10,
+      "value": "0x40000000"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/PrinterStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17587,
+      "length": 10,
+      "value": "0x20000000"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/PrinterStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17690,
+      "length": 10,
+      "value": "0x08000000"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/PrinterStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17817,
+      "length": 10,
+      "value": "0x04000000"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/PrinterStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17922,
+      "length": 10,
+      "value": "0x02000000"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/PrinterStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18070,
+      "length": 10,
+      "value": "0x01000000"
+    },
+    {
+      "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/PrinterStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18764,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/PrinterStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 18414,
+      "offset": 18794,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/PrinterStatus.swift",
       "kind": "StringLiteral",
-      "offset": 18606,
+      "offset": 18986,
       "length": 11,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/PrinterStatus.swift",
       "kind": "StringLiteral",
-      "offset": 18616,
+      "offset": 18996,
       "length": 18,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/PrinterStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 19315,
+      "offset": 19695,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/PrinterStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 19433,
+      "offset": 19813,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/fcolas\/dev\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/PrinterStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 19551,
+      "offset": 19931,
       "length": 1,
       "value": "2"
     },
