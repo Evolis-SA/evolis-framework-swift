@@ -1,7 +1,7 @@
 framework module EvolisFramework {
   umbrella header "EvolisFramework.h"
-
   export *
+
   module * { export * }
 }
 
