@@ -129,7 +129,7 @@ public class Discovery {
   public func stop()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class RibbonInfo {
+public class RibbonInfo {
   public var description: Swift.String
   public var zone: Swift.String
   public var type: EvolisFramework.RibbonType
@@ -141,6 +141,7 @@ public class Discovery {
   public var buildAt: Swift.String
   public var serialNumber: Swift.String
   public var internalCode: Swift.String
+  public init(_ info_c: EvolisSDK.evolis_ribbon_s)
   @objc deinit
 }
 public enum CardFace : Swift.UInt32, Swift.CaseIterable, Swift.Codable {

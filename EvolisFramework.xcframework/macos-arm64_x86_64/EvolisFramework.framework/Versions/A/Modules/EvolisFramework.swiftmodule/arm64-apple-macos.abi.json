@@ -4773,6 +4773,33 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RibbonInfo",
+                "printedName": "EvolisFramework.RibbonInfo",
+                "usr": "s:15EvolisFramework10RibbonInfoC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "evolis_ribbon_s",
+                "printedName": "EvolisSDK.evolis_ribbon_s",
+                "usr": "c:@S@evolis_ribbon_s"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15EvolisFramework10RibbonInfoCyACSo15evolis_ribbon_sVcfc",
+            "mangledName": "$s15EvolisFramework10RibbonInfoCyACSo15evolis_ribbon_sVcfc",
+            "moduleName": "EvolisFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
@@ -4781,8 +4808,7 @@
         "moduleName": "EvolisFramework",
         "declAttributes": [
           "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true
+        ]
       },
       {
         "kind": "Import",

@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/EvolisFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		urQ+I6z6PGteGG6HtKXTkNRAR3k=
+		8dJ+c70/hNHXNBCR3ZKC4ncdhy4=
 		</data>
 		<key>Modules/EvolisFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ZCWLHdM9RnfjILk2EMpnlA8hwxs=
+		UeHe+A15FXqII0TYnYiH0oZv6Us=
 		</data>
 		<key>Modules/EvolisFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/EvolisFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ZCWLHdM9RnfjILk2EMpnlA8hwxs=
+		UeHe+A15FXqII0TYnYiH0oZv6Us=
 		</data>
 		<key>Modules/EvolisFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/pQP5/QIadfsfyLUkvozegu+A0Y=
+		N0kbFcekXVZhWX4cqSZCLVK4uKM=
 		</data>
 		<key>Modules/EvolisFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		urQ+I6z6PGteGG6HtKXTkNRAR3k=
+		8dJ+c70/hNHXNBCR3ZKC4ncdhy4=
 		</data>
 		<key>Modules/EvolisFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		0OaLlV14roQZjcBP1U/Q3UMj6zs=
+		wxKJn+FKpk8hgwcxmwQHF6Vx08A=
 		</data>
 		<key>Modules/EvolisFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/EvolisFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		0OaLlV14roQZjcBP1U/Q3UMj6zs=
+		wxKJn+FKpk8hgwcxmwQHF6Vx08A=
 		</data>
 		<key>Modules/EvolisFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		TXCLv0aSP64I/Uk9q6qKm19NYRU=
+		Xv+o+1ndJM7ThHqbncg+uvC+1+g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,14 +81,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kRdCbB+BbyEiwPuFe5qpeFjcW1jijHMhk3fIO9JDx7k=
+			I1dJYt/YwB8cAmlnYqEY6RJG8nsxnR/eu6AYTloW3xU=
 			</data>
 		</dict>
 		<key>Modules/EvolisFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IWEt3+OywjWc0sjORP7dqE9lRpkiODvFP3NJtbXd8Z0=
+			E0C8nA/y4Y/M9E8rB3SjMQaltjGrKX6/kaWGXSdQnuk=
 			</data>
 		</dict>
 		<key>Modules/EvolisFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -102,28 +102,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IWEt3+OywjWc0sjORP7dqE9lRpkiODvFP3NJtbXd8Z0=
+			E0C8nA/y4Y/M9E8rB3SjMQaltjGrKX6/kaWGXSdQnuk=
 			</data>
 		</dict>
 		<key>Modules/EvolisFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qyZrF9ClqpKPKcLdLhb4syhF7sz5Q3C6KcdtLGbdbJw=
+			+OBaggus8PJX5PCMSAwHwUyzZtrgu6wMwi8nHjSJnrk=
 			</data>
 		</dict>
 		<key>Modules/EvolisFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kRdCbB+BbyEiwPuFe5qpeFjcW1jijHMhk3fIO9JDx7k=
+			I1dJYt/YwB8cAmlnYqEY6RJG8nsxnR/eu6AYTloW3xU=
 			</data>
 		</dict>
 		<key>Modules/EvolisFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C0SsnvnsfvRwIxITA1tpsIrztqsV48EJk/MsgcxVgg8=
+			kv+nVp7092t183AMHrrHMYRrF2FMPI6wg8MGVqOioFk=
 			</data>
 		</dict>
 		<key>Modules/EvolisFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C0SsnvnsfvRwIxITA1tpsIrztqsV48EJk/MsgcxVgg8=
+			kv+nVp7092t183AMHrrHMYRrF2FMPI6wg8MGVqOioFk=
 			</data>
 		</dict>
 		<key>Modules/EvolisFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zxJune9ZjBDy5GIyH5/r/FMcBB0bP9xDqgLwejh+pbY=
+			yXtT+BkQEARjY8iEgnc5WCTeZ5RbfpOlb2Cn30gl1C8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
