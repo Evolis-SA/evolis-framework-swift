@@ -293,6 +293,7 @@ public class Connection {
   public func getState() -> EvolisFramework.PrinterState?
   public func getInfo() -> EvolisFramework.PrinterInfo?
   public func getRibbonInfo() -> EvolisFramework.RibbonInfo?
+  public func getRetransferFilmInfo() -> EvolisFramework.RibbonInfo?
   public func getCleaningInfo() -> EvolisFramework.CleaningInfo?
   public func getBezelBehavior() -> EvolisFramework.BezelBehavior?
   public func setBezelBehavior(_ bb: EvolisFramework.BezelBehavior) -> Swift.Bool
@@ -527,7 +528,6 @@ public enum SettingKey : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case BOverlayContrast
   case BOverlayManagement
   case BOverlaySecondManagement
-  case UIBOverlayManagement
   case BPageRotate180
   case BRwErasingSpeed
   case BRwErasingTemperature
@@ -548,7 +548,6 @@ public enum SettingKey : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case FOverlayContrast
   case FOverlayManagement
   case FOverlaySecondManagement
-  case UIFOverlayManagement
   case FPageRotate180
   case FRwErasingSpeed
   case FRwErasingTemperature
@@ -637,10 +636,6 @@ public enum SettingKey : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case Track3Data
   case PrinterIsManaged
   case srvAddress
-  case UIBOverlayDefaultAreasList
-  case UIBRwCustomAreasList
-  case UIFOverlayDefaultAreasList
-  case UIFRwCustomAreasList
   case UIMagTrackSettingMode
   case UIRibbonMode
   case UpdatedByDrv
@@ -748,6 +743,7 @@ public enum Mark : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case Durable
   case Plasco
   case Identisys
+  case Bodno
   public init?(rawValue: Swift.UInt32)
   public typealias AllCases = [EvolisFramework.Mark]
   public typealias RawValue = Swift.UInt32
@@ -806,6 +802,7 @@ public enum Model : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case Evolis_Primacy
   case Evolis_Altess
   case Evolis_Altess_Elite
+  case BadgePass_Connect
   case BadgePass_NXT5000
   case ID_Maker_Primacy
   case Evolis_Elypso
@@ -819,6 +816,8 @@ public enum Model : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case Edikio_Duplex
   case Evolis_Badgy100
   case Evolis_Badgy200
+  case Bodno_Badgy100X
+  case Bodno_Badgy200X
   case Evolis_Lamination_Module
   case Evolis_KC_Essential
   case Evolis_KC_Prime
