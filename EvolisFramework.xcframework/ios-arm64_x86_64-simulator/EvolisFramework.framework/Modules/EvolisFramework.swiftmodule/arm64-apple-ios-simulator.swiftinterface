@@ -1292,6 +1292,7 @@ public enum RibbonType : Swift.Int32, Swift.CaseIterable, Swift.Codable {
   case YMCKK
   case YMCKKS
   case YMCKKI
+  case KBLACK_R
   case CLEAR
   public init?(rawValue: Swift.Int32)
   public typealias AllCases = [EvolisFramework.RibbonType]

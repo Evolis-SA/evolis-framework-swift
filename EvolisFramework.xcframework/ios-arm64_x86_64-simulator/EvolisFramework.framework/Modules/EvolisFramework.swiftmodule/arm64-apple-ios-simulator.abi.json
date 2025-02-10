@@ -45620,6 +45620,43 @@
           },
           {
             "kind": "Var",
+            "name": "KBLACK_R",
+            "printedName": "KBLACK_R",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EvolisFramework.RibbonType.Type) -> EvolisFramework.RibbonType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RibbonType",
+                    "printedName": "EvolisFramework.RibbonType",
+                    "usr": "s:15EvolisFramework10RibbonTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EvolisFramework.RibbonType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RibbonType",
+                        "printedName": "EvolisFramework.RibbonType",
+                        "usr": "s:15EvolisFramework10RibbonTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15EvolisFramework10RibbonTypeO8KBLACK_RyA2CmF",
+            "mangledName": "$s15EvolisFramework10RibbonTypeO8KBLACK_RyA2CmF",
+            "moduleName": "EvolisFramework"
+          },
+          {
+            "kind": "Var",
             "name": "CLEAR",
             "printedName": "CLEAR",
             "children": [
@@ -50098,665 +50135,665 @@
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 9105,
+      "offset": 9118,
       "length": 2,
       "value": "54"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 9269,
+      "offset": 9282,
       "length": 2,
       "value": "55"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 9416,
+      "offset": 9429,
       "length": 2,
       "value": "56"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 9583,
+      "offset": 9596,
       "length": 2,
       "value": "57"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 9741,
+      "offset": 9754,
       "length": 2,
       "value": "58"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 9849,
+      "offset": 9862,
       "length": 2,
       "value": "59"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 9985,
+      "offset": 9998,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 10119,
+      "offset": 10132,
       "length": 2,
       "value": "61"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 10235,
+      "offset": 10248,
       "length": 2,
       "value": "62"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 10347,
+      "offset": 10360,
       "length": 2,
       "value": "63"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 10476,
+      "offset": 10489,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 10600,
+      "offset": 10613,
       "length": 2,
       "value": "65"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 10741,
+      "offset": 10754,
       "length": 2,
       "value": "66"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 10911,
+      "offset": 10924,
       "length": 2,
       "value": "67"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11013,
+      "offset": 11026,
       "length": 2,
       "value": "68"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11128,
+      "offset": 11141,
       "length": 2,
       "value": "69"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11234,
+      "offset": 11247,
       "length": 2,
       "value": "70"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11368,
+      "offset": 11381,
       "length": 2,
       "value": "71"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11473,
+      "offset": 11486,
       "length": 2,
       "value": "72"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11575,
+      "offset": 11588,
       "length": 2,
       "value": "73"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11683,
+      "offset": 11696,
       "length": 2,
       "value": "74"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11819,
+      "offset": 11832,
       "length": 2,
       "value": "75"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11953,
+      "offset": 11966,
       "length": 2,
       "value": "76"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 12069,
+      "offset": 12082,
       "length": 2,
       "value": "77"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 12181,
+      "offset": 12194,
       "length": 2,
       "value": "78"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 12310,
+      "offset": 12323,
       "length": 2,
       "value": "79"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 12434,
+      "offset": 12447,
       "length": 2,
       "value": "80"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 12575,
+      "offset": 12588,
       "length": 2,
       "value": "81"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 12745,
+      "offset": 12758,
       "length": 2,
       "value": "82"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 12847,
+      "offset": 12860,
       "length": 2,
       "value": "83"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 12962,
+      "offset": 12975,
       "length": 2,
       "value": "84"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13068,
+      "offset": 13081,
       "length": 2,
       "value": "85"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13173,
+      "offset": 13186,
       "length": 2,
       "value": "86"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13275,
+      "offset": 13288,
       "length": 2,
       "value": "87"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13409,
+      "offset": 13422,
       "length": 2,
       "value": "88"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13511,
+      "offset": 13524,
       "length": 2,
       "value": "89"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13641,
+      "offset": 13654,
       "length": 2,
       "value": "90"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13758,
+      "offset": 13771,
       "length": 2,
       "value": "91"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13875,
+      "offset": 13888,
       "length": 2,
       "value": "92"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13992,
+      "offset": 14005,
       "length": 2,
       "value": "93"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 14109,
+      "offset": 14122,
       "length": 2,
       "value": "94"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 14226,
+      "offset": 14239,
       "length": 2,
       "value": "95"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 14343,
+      "offset": 14356,
       "length": 2,
       "value": "96"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 14493,
+      "offset": 14506,
       "length": 2,
       "value": "97"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 14628,
+      "offset": 14641,
       "length": 2,
       "value": "98"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 14793,
+      "offset": 14806,
       "length": 2,
       "value": "99"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 14948,
+      "offset": 14961,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 15084,
+      "offset": 15097,
       "length": 3,
       "value": "101"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 15241,
+      "offset": 15254,
       "length": 3,
       "value": "102"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 15393,
+      "offset": 15406,
       "length": 3,
       "value": "103"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 15543,
+      "offset": 15556,
       "length": 3,
       "value": "104"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 15671,
+      "offset": 15684,
       "length": 3,
       "value": "105"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 15807,
+      "offset": 15820,
       "length": 3,
       "value": "106"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 15939,
+      "offset": 15952,
       "length": 3,
       "value": "107"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 16071,
+      "offset": 16084,
       "length": 3,
       "value": "108"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 16185,
+      "offset": 16198,
       "length": 3,
       "value": "109"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 16352,
+      "offset": 16365,
       "length": 3,
       "value": "110"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 16498,
+      "offset": 16511,
       "length": 3,
       "value": "111"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 16634,
+      "offset": 16647,
       "length": 3,
       "value": "112"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 16789,
+      "offset": 16802,
       "length": 3,
       "value": "113"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 16887,
+      "offset": 16900,
       "length": 3,
       "value": "114"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 17064,
+      "offset": 17077,
       "length": 3,
       "value": "115"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 17168,
+      "offset": 17181,
       "length": 3,
       "value": "116"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 17272,
+      "offset": 17285,
       "length": 3,
       "value": "117"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 17376,
+      "offset": 17389,
       "length": 3,
       "value": "118"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 17510,
+      "offset": 17523,
       "length": 3,
       "value": "119"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 17614,
+      "offset": 17627,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 17758,
+      "offset": 17771,
       "length": 3,
       "value": "121"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 17884,
+      "offset": 17897,
       "length": 3,
       "value": "122"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 18010,
+      "offset": 18023,
       "length": 3,
       "value": "123"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 18136,
+      "offset": 18149,
       "length": 3,
       "value": "124"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 18311,
+      "offset": 18324,
       "length": 3,
       "value": "125"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 18456,
+      "offset": 18469,
       "length": 3,
       "value": "126"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 18631,
+      "offset": 18644,
       "length": 3,
       "value": "127"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 18754,
+      "offset": 18767,
       "length": 3,
       "value": "128"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 18880,
+      "offset": 18893,
       "length": 3,
       "value": "129"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 19000,
+      "offset": 19013,
       "length": 3,
       "value": "130"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 19167,
+      "offset": 19180,
       "length": 3,
       "value": "131"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 19333,
+      "offset": 19346,
       "length": 3,
       "value": "132"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 19498,
+      "offset": 19511,
       "length": 3,
       "value": "133"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 19623,
+      "offset": 19636,
       "length": 3,
       "value": "134"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 19750,
+      "offset": 19763,
       "length": 3,
       "value": "135"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 19923,
+      "offset": 19936,
       "length": 3,
       "value": "136"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 20029,
+      "offset": 20042,
       "length": 3,
       "value": "137"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 20202,
+      "offset": 20215,
       "length": 3,
       "value": "138"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 20330,
+      "offset": 20343,
       "length": 3,
       "value": "139"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 20457,
+      "offset": 20470,
       "length": 3,
       "value": "140"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 20585,
+      "offset": 20598,
       "length": 3,
       "value": "141"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 20712,
+      "offset": 20725,
       "length": 3,
       "value": "142"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 20856,
+      "offset": 20869,
       "length": 3,
       "value": "143"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 21000,
+      "offset": 21013,
       "length": 3,
       "value": "144"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 21151,
+      "offset": 21164,
       "length": 3,
       "value": "145"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 21262,
+      "offset": 21275,
       "length": 3,
       "value": "146"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 21413,
+      "offset": 21426,
       "length": 3,
       "value": "147"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 21524,
+      "offset": 21537,
       "length": 3,
       "value": "148"
     },
@@ -51141,665 +51178,665 @@
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 9105,
+      "offset": 9118,
       "length": 2,
       "value": "54"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 9269,
+      "offset": 9282,
       "length": 2,
       "value": "55"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 9416,
+      "offset": 9429,
       "length": 2,
       "value": "56"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 9583,
+      "offset": 9596,
       "length": 2,
       "value": "57"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 9741,
+      "offset": 9754,
       "length": 2,
       "value": "58"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 9849,
+      "offset": 9862,
       "length": 2,
       "value": "59"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 9985,
+      "offset": 9998,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 10119,
+      "offset": 10132,
       "length": 2,
       "value": "61"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 10235,
+      "offset": 10248,
       "length": 2,
       "value": "62"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 10347,
+      "offset": 10360,
       "length": 2,
       "value": "63"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 10476,
+      "offset": 10489,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 10600,
+      "offset": 10613,
       "length": 2,
       "value": "65"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 10741,
+      "offset": 10754,
       "length": 2,
       "value": "66"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 10911,
+      "offset": 10924,
       "length": 2,
       "value": "67"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11013,
+      "offset": 11026,
       "length": 2,
       "value": "68"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11128,
+      "offset": 11141,
       "length": 2,
       "value": "69"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11234,
+      "offset": 11247,
       "length": 2,
       "value": "70"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11368,
+      "offset": 11381,
       "length": 2,
       "value": "71"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11473,
+      "offset": 11486,
       "length": 2,
       "value": "72"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11575,
+      "offset": 11588,
       "length": 2,
       "value": "73"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11683,
+      "offset": 11696,
       "length": 2,
       "value": "74"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11819,
+      "offset": 11832,
       "length": 2,
       "value": "75"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11953,
+      "offset": 11966,
       "length": 2,
       "value": "76"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 12069,
+      "offset": 12082,
       "length": 2,
       "value": "77"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 12181,
+      "offset": 12194,
       "length": 2,
       "value": "78"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 12310,
+      "offset": 12323,
       "length": 2,
       "value": "79"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 12434,
+      "offset": 12447,
       "length": 2,
       "value": "80"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 12575,
+      "offset": 12588,
       "length": 2,
       "value": "81"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 12745,
+      "offset": 12758,
       "length": 2,
       "value": "82"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 12847,
+      "offset": 12860,
       "length": 2,
       "value": "83"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 12962,
+      "offset": 12975,
       "length": 2,
       "value": "84"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13068,
+      "offset": 13081,
       "length": 2,
       "value": "85"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13173,
+      "offset": 13186,
       "length": 2,
       "value": "86"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13275,
+      "offset": 13288,
       "length": 2,
       "value": "87"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13409,
+      "offset": 13422,
       "length": 2,
       "value": "88"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13511,
+      "offset": 13524,
       "length": 2,
       "value": "89"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13641,
+      "offset": 13654,
       "length": 2,
       "value": "90"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13758,
+      "offset": 13771,
       "length": 2,
       "value": "91"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13875,
+      "offset": 13888,
       "length": 2,
       "value": "92"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13992,
+      "offset": 14005,
       "length": 2,
       "value": "93"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 14109,
+      "offset": 14122,
       "length": 2,
       "value": "94"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 14226,
+      "offset": 14239,
       "length": 2,
       "value": "95"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 14343,
+      "offset": 14356,
       "length": 2,
       "value": "96"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 14493,
+      "offset": 14506,
       "length": 2,
       "value": "97"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 14628,
+      "offset": 14641,
       "length": 2,
       "value": "98"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 14793,
+      "offset": 14806,
       "length": 2,
       "value": "99"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 14948,
+      "offset": 14961,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 15084,
+      "offset": 15097,
       "length": 3,
       "value": "101"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 15241,
+      "offset": 15254,
       "length": 3,
       "value": "102"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 15393,
+      "offset": 15406,
       "length": 3,
       "value": "103"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 15543,
+      "offset": 15556,
       "length": 3,
       "value": "104"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 15671,
+      "offset": 15684,
       "length": 3,
       "value": "105"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 15807,
+      "offset": 15820,
       "length": 3,
       "value": "106"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 15939,
+      "offset": 15952,
       "length": 3,
       "value": "107"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 16071,
+      "offset": 16084,
       "length": 3,
       "value": "108"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 16185,
+      "offset": 16198,
       "length": 3,
       "value": "109"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 16352,
+      "offset": 16365,
       "length": 3,
       "value": "110"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 16498,
+      "offset": 16511,
       "length": 3,
       "value": "111"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 16634,
+      "offset": 16647,
       "length": 3,
       "value": "112"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 16789,
+      "offset": 16802,
       "length": 3,
       "value": "113"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 16887,
+      "offset": 16900,
       "length": 3,
       "value": "114"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 17064,
+      "offset": 17077,
       "length": 3,
       "value": "115"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 17168,
+      "offset": 17181,
       "length": 3,
       "value": "116"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 17272,
+      "offset": 17285,
       "length": 3,
       "value": "117"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 17376,
+      "offset": 17389,
       "length": 3,
       "value": "118"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 17510,
+      "offset": 17523,
       "length": 3,
       "value": "119"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 17614,
+      "offset": 17627,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 17758,
+      "offset": 17771,
       "length": 3,
       "value": "121"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 17884,
+      "offset": 17897,
       "length": 3,
       "value": "122"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 18010,
+      "offset": 18023,
       "length": 3,
       "value": "123"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 18136,
+      "offset": 18149,
       "length": 3,
       "value": "124"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 18311,
+      "offset": 18324,
       "length": 3,
       "value": "125"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 18456,
+      "offset": 18469,
       "length": 3,
       "value": "126"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 18631,
+      "offset": 18644,
       "length": 3,
       "value": "127"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 18754,
+      "offset": 18767,
       "length": 3,
       "value": "128"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 18880,
+      "offset": 18893,
       "length": 3,
       "value": "129"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 19000,
+      "offset": 19013,
       "length": 3,
       "value": "130"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 19167,
+      "offset": 19180,
       "length": 3,
       "value": "131"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 19333,
+      "offset": 19346,
       "length": 3,
       "value": "132"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 19498,
+      "offset": 19511,
       "length": 3,
       "value": "133"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 19623,
+      "offset": 19636,
       "length": 3,
       "value": "134"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 19750,
+      "offset": 19763,
       "length": 3,
       "value": "135"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 19923,
+      "offset": 19936,
       "length": 3,
       "value": "136"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 20029,
+      "offset": 20042,
       "length": 3,
       "value": "137"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 20202,
+      "offset": 20215,
       "length": 3,
       "value": "138"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 20330,
+      "offset": 20343,
       "length": 3,
       "value": "139"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 20457,
+      "offset": 20470,
       "length": 3,
       "value": "140"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 20585,
+      "offset": 20598,
       "length": 3,
       "value": "141"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 20712,
+      "offset": 20725,
       "length": 3,
       "value": "142"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 20856,
+      "offset": 20869,
       "length": 3,
       "value": "143"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 21000,
+      "offset": 21013,
       "length": 3,
       "value": "144"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 21151,
+      "offset": 21164,
       "length": 3,
       "value": "145"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 21262,
+      "offset": 21275,
       "length": 3,
       "value": "146"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 21413,
+      "offset": 21426,
       "length": 3,
       "value": "147"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 21524,
+      "offset": 21537,
       "length": 3,
       "value": "148"
     },
@@ -52184,665 +52221,665 @@
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 9105,
+      "offset": 9118,
       "length": 2,
       "value": "54"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 9269,
+      "offset": 9282,
       "length": 2,
       "value": "55"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 9416,
+      "offset": 9429,
       "length": 2,
       "value": "56"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 9583,
+      "offset": 9596,
       "length": 2,
       "value": "57"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 9741,
+      "offset": 9754,
       "length": 2,
       "value": "58"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 9849,
+      "offset": 9862,
       "length": 2,
       "value": "59"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 9985,
+      "offset": 9998,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 10119,
+      "offset": 10132,
       "length": 2,
       "value": "61"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 10235,
+      "offset": 10248,
       "length": 2,
       "value": "62"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 10347,
+      "offset": 10360,
       "length": 2,
       "value": "63"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 10476,
+      "offset": 10489,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 10600,
+      "offset": 10613,
       "length": 2,
       "value": "65"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 10741,
+      "offset": 10754,
       "length": 2,
       "value": "66"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 10911,
+      "offset": 10924,
       "length": 2,
       "value": "67"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11013,
+      "offset": 11026,
       "length": 2,
       "value": "68"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11128,
+      "offset": 11141,
       "length": 2,
       "value": "69"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11234,
+      "offset": 11247,
       "length": 2,
       "value": "70"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11368,
+      "offset": 11381,
       "length": 2,
       "value": "71"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11473,
+      "offset": 11486,
       "length": 2,
       "value": "72"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11575,
+      "offset": 11588,
       "length": 2,
       "value": "73"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11683,
+      "offset": 11696,
       "length": 2,
       "value": "74"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11819,
+      "offset": 11832,
       "length": 2,
       "value": "75"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 11953,
+      "offset": 11966,
       "length": 2,
       "value": "76"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 12069,
+      "offset": 12082,
       "length": 2,
       "value": "77"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 12181,
+      "offset": 12194,
       "length": 2,
       "value": "78"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 12310,
+      "offset": 12323,
       "length": 2,
       "value": "79"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 12434,
+      "offset": 12447,
       "length": 2,
       "value": "80"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 12575,
+      "offset": 12588,
       "length": 2,
       "value": "81"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 12745,
+      "offset": 12758,
       "length": 2,
       "value": "82"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 12847,
+      "offset": 12860,
       "length": 2,
       "value": "83"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 12962,
+      "offset": 12975,
       "length": 2,
       "value": "84"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13068,
+      "offset": 13081,
       "length": 2,
       "value": "85"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13173,
+      "offset": 13186,
       "length": 2,
       "value": "86"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13275,
+      "offset": 13288,
       "length": 2,
       "value": "87"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13409,
+      "offset": 13422,
       "length": 2,
       "value": "88"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13511,
+      "offset": 13524,
       "length": 2,
       "value": "89"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13641,
+      "offset": 13654,
       "length": 2,
       "value": "90"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13758,
+      "offset": 13771,
       "length": 2,
       "value": "91"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13875,
+      "offset": 13888,
       "length": 2,
       "value": "92"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 13992,
+      "offset": 14005,
       "length": 2,
       "value": "93"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 14109,
+      "offset": 14122,
       "length": 2,
       "value": "94"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 14226,
+      "offset": 14239,
       "length": 2,
       "value": "95"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 14343,
+      "offset": 14356,
       "length": 2,
       "value": "96"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 14493,
+      "offset": 14506,
       "length": 2,
       "value": "97"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 14628,
+      "offset": 14641,
       "length": 2,
       "value": "98"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 14793,
+      "offset": 14806,
       "length": 2,
       "value": "99"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 14948,
+      "offset": 14961,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 15084,
+      "offset": 15097,
       "length": 3,
       "value": "101"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 15241,
+      "offset": 15254,
       "length": 3,
       "value": "102"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 15393,
+      "offset": 15406,
       "length": 3,
       "value": "103"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 15543,
+      "offset": 15556,
       "length": 3,
       "value": "104"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 15671,
+      "offset": 15684,
       "length": 3,
       "value": "105"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 15807,
+      "offset": 15820,
       "length": 3,
       "value": "106"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 15939,
+      "offset": 15952,
       "length": 3,
       "value": "107"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 16071,
+      "offset": 16084,
       "length": 3,
       "value": "108"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 16185,
+      "offset": 16198,
       "length": 3,
       "value": "109"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 16352,
+      "offset": 16365,
       "length": 3,
       "value": "110"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 16498,
+      "offset": 16511,
       "length": 3,
       "value": "111"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 16634,
+      "offset": 16647,
       "length": 3,
       "value": "112"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 16789,
+      "offset": 16802,
       "length": 3,
       "value": "113"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 16887,
+      "offset": 16900,
       "length": 3,
       "value": "114"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 17064,
+      "offset": 17077,
       "length": 3,
       "value": "115"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 17168,
+      "offset": 17181,
       "length": 3,
       "value": "116"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 17272,
+      "offset": 17285,
       "length": 3,
       "value": "117"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 17376,
+      "offset": 17389,
       "length": 3,
       "value": "118"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 17510,
+      "offset": 17523,
       "length": 3,
       "value": "119"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 17614,
+      "offset": 17627,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 17758,
+      "offset": 17771,
       "length": 3,
       "value": "121"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 17884,
+      "offset": 17897,
       "length": 3,
       "value": "122"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 18010,
+      "offset": 18023,
       "length": 3,
       "value": "123"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 18136,
+      "offset": 18149,
       "length": 3,
       "value": "124"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 18311,
+      "offset": 18324,
       "length": 3,
       "value": "125"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 18456,
+      "offset": 18469,
       "length": 3,
       "value": "126"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 18631,
+      "offset": 18644,
       "length": 3,
       "value": "127"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 18754,
+      "offset": 18767,
       "length": 3,
       "value": "128"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 18880,
+      "offset": 18893,
       "length": 3,
       "value": "129"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 19000,
+      "offset": 19013,
       "length": 3,
       "value": "130"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 19167,
+      "offset": 19180,
       "length": 3,
       "value": "131"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 19333,
+      "offset": 19346,
       "length": 3,
       "value": "132"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 19498,
+      "offset": 19511,
       "length": 3,
       "value": "133"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 19623,
+      "offset": 19636,
       "length": 3,
       "value": "134"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 19750,
+      "offset": 19763,
       "length": 3,
       "value": "135"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 19923,
+      "offset": 19936,
       "length": 3,
       "value": "136"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 20029,
+      "offset": 20042,
       "length": 3,
       "value": "137"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 20202,
+      "offset": 20215,
       "length": 3,
       "value": "138"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 20330,
+      "offset": 20343,
       "length": 3,
       "value": "139"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 20457,
+      "offset": 20470,
       "length": 3,
       "value": "140"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 20585,
+      "offset": 20598,
       "length": 3,
       "value": "141"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 20712,
+      "offset": 20725,
       "length": 3,
       "value": "142"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 20856,
+      "offset": 20869,
       "length": 3,
       "value": "143"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 21000,
+      "offset": 21013,
       "length": 3,
       "value": "144"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 21151,
+      "offset": 21164,
       "length": 3,
       "value": "145"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 21262,
+      "offset": 21275,
       "length": 3,
       "value": "146"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 21413,
+      "offset": 21426,
       "length": 3,
       "value": "147"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/SettingKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 21524,
+      "offset": 21537,
       "length": 3,
       "value": "148"
     },
@@ -61844,7 +61881,14 @@
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/RibbonType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1079,
+      "offset": 1082,
+      "length": 4,
+      "value": "1100"
+    },
+    {
+      "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/RibbonType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1104,
       "length": 4,
       "value": "2000"
     },
@@ -62068,7 +62112,14 @@
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/RibbonType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1079,
+      "offset": 1082,
+      "length": 4,
+      "value": "1100"
+    },
+    {
+      "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/RibbonType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1104,
       "length": 4,
       "value": "2000"
     },
@@ -62292,7 +62343,14 @@
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/RibbonType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1079,
+      "offset": 1082,
+      "length": 4,
+      "value": "1100"
+    },
+    {
+      "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/RibbonType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1104,
       "length": 4,
       "value": "2000"
     }
