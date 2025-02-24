@@ -932,6 +932,8 @@ public struct PrinterStatus {
     case CFG_EXTENSION_3
     case CFG_LAMINATION_MODULE_2
     case CFG_EXTENSION_4
+    case CFG_BRIDGE
+    case CFG_INDENTING
     case INF_CLAIM
     case INF_CARD_HOPPER
     case INF_CARD_FEEDER
@@ -1008,6 +1010,10 @@ public struct PrinterStatus {
     case INF_CARD_MAN_FEED
     case INF_HEAT_ROLLER_WORN_OUT
     case INF_PRE_HEATING_PRINT_HEAD
+    case INF_CARD_BRIDGE
+    case INF_CARD_INDENTING
+    case INF_BRIDGE_UPDATING_FIRMWARE
+    case INF_CASSETTE_PRESENCE
     case WAR_POWER_SUPPLY
     case WAR_REMOVE_RIBBON
     case WAR_RECEPTACLE_OPEN
@@ -1033,6 +1039,7 @@ public struct PrinterStatus {
     case WAR_LAMINATE_END
     case WAR_LAMI_HOPPER_FULL
     case WAR_LAMINATE_UNSUPPORTED
+    case WAR_REJECT_BOX_ALMOST_FULL
     case ERR_HEAD_TEMP
     case ERR_NO_OPTION
     case ERR_FEEDER_ERROR
@@ -1100,13 +1107,6 @@ public struct PrinterStatus {
     case RSV_EX3_0X00000400
     case RSV_EX3_0X00000200
     case RSV_EX3_0X00000100
-    case RSV_EX3_0X00000080
-    case RSV_EX3_0X00000040
-    case RSV_EX3_0X00000020
-    case RSV_EX3_0X00000010
-    case RSV_EX3_0X00000008
-    case RSV_EX3_0X00000004
-    case RSV_EX3_0X00000002
     case RSV_EX3_0X00000001
     public init?(rawValue: Swift.UInt32)
     public typealias AllCases = [EvolisFramework.PrinterStatus.Flag]
@@ -1232,13 +1232,13 @@ public struct PrinterStatus {
     case EX3_RSV_EX3_0X00000400
     case EX3_RSV_EX3_0X00000200
     case EX3_RSV_EX3_0X00000100
-    case EX3_RSV_EX3_0X00000080
-    case EX3_RSV_EX3_0X00000040
-    case EX3_RSV_EX3_0X00000020
-    case EX3_RSV_EX3_0X00000010
-    case EX3_RSV_EX3_0X00000008
-    case EX3_RSV_EX3_0X00000004
-    case EX3_RSV_EX3_0X00000002
+    case EX3_CFG_BRIDGE
+    case EX3_INF_CARD_BRIDGE
+    case EX3_CFG_INDENTING
+    case EX3_INF_CARD_INDENTING
+    case EX3_INF_BRIDGE_UPDATING_FIRMWARE
+    case EX3_DEF_REJECT_BOX_ALMOST_FULL
+    case EX3_INF_CASSETTE_PRESENCE
     case EX3_RSV_EX3_0X00000001
     public init?(rawValue: Swift.UInt32)
     public typealias AllCases = [EvolisFramework.PrinterStatus.Ex3Flag]
