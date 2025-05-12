@@ -119,6 +119,20 @@ public class PrintSession {
   public func exportOptions(_ path: Swift.String, separator: Swift.Character = "=") -> Swift.Bool
   @objc deinit
 }
+public enum LaminatorIndex : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
+  case SELF
+  case FIRST
+  case SECOND
+  public init?(rawValue: Swift.UInt32)
+  public typealias AllCases = [EvolisFramework.LaminatorIndex]
+  public typealias RawValue = Swift.UInt32
+  public static var allCases: [EvolisFramework.LaminatorIndex] {
+    get
+  }
+  public var rawValue: Swift.UInt32 {
+    get
+  }
+}
 public enum MagCoercivity : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case PRINTER
   case AUTO
@@ -142,6 +156,32 @@ public class Discovery {
   public func stop()
   @objc deinit
 }
+public enum LaminatorFilmType : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
+  case UNKNOWN
+  case CLEAR_PATCH_1_0_MIL
+  case GENERIC_HOLO_PATCH_1_0_MIL
+  case CLEAR_SMART_CUT_PATCH_1_0_MIL
+  case CLEAR_MAG_CUT_PATCH_1_0_MIL
+  case CLEAR_PATCH_0_5_MIL
+  case GENERIC_HOLO_PATCH_0_6_MIL
+  case CLEAR_SMART_CUT_PATCH_0_5_MIL
+  case CLEAR_MAG_CUT_PATCH_0_5_MIL
+  case GENERIC_HOLO_CONTINUOUS
+  case GENERIC_HOLO_REGISTERED
+  case CLEAR_VARNISH
+  case ALT_SMART_FULL_1_0_MIL
+  case ALT_SMART_MAG_1_0_MIL
+  case ALT_FULL_MAG_1_0_MI
+  public init?(rawValue: Swift.UInt32)
+  public typealias AllCases = [EvolisFramework.LaminatorFilmType]
+  public typealias RawValue = Swift.UInt32
+  public static var allCases: [EvolisFramework.LaminatorFilmType] {
+    get
+  }
+  public var rawValue: Swift.UInt32 {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers public class RibbonInfo {
   public var description: Swift.String
   public var zone: Swift.String
@@ -154,6 +194,19 @@ public class Discovery {
   public var buildAt: Swift.String
   public var serialNumber: Swift.String
   public var internalCode: Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class LaminatorFilmInfo {
+  public var description: Swift.String
+  public var zone: Swift.String
+  public var type: EvolisFramework.LaminatorFilmType
+  public var productCode: Swift.String
+  public var capacity: Swift.Int
+  public var remaining: Swift.Int
+  public var buildDate: Swift.String
+  public var serialNumber: Swift.String
+  public var internalCode: Swift.String
+  public var batchNumber: Swift.String
   @objc deinit
 }
 public enum CardFace : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
@@ -250,6 +303,34 @@ public enum BezelBehavior : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
     get
   }
 }
+@_hasMissingDesignatedInitializers public class Service {
+  public static func select(model: EvolisFramework.Model, url: Swift.String?) -> Swift.Bool
+  public static func start() -> Swift.Bool
+  public static func restart() -> Swift.Bool
+  public static func stop() -> Swift.Bool
+  public static func is_running() -> Swift.Bool
+  @objc deinit
+}
+public class LaminatorInfo {
+  public var fwVersion: Swift.String
+  public var serialNumber: Swift.String
+  public var cpuSerialNumber: Swift.String
+  public var zone: Swift.String
+  public var isStandAlone: Swift.Bool
+  public var nbLaminatedSides: Swift.Int
+  public var nbInsertedCards: Swift.Int
+  public var mode: EvolisFramework.LaminatorMode
+  public var isFirstPatchFront: Swift.Bool
+  public var defaultFrontSpeed: Swift.Int
+  public var defaultBackSpeed: Swift.Int
+  public var defaultTemperature: Swift.Int
+  public var frontSpeedCfg: Swift.Int
+  public var backSpeedCfg: Swift.Int
+  public var frontTemperatureCfg: Swift.Int
+  public var backTemperatureCfg: Swift.Int
+  public init(_ lam_info_c: EvolisSDK.evolis_laminator_info_s)
+  @objc deinit
+}
 public enum OutputTray : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case STANDARD
   case STANDARDSTANDBY
@@ -320,6 +401,17 @@ public class Connection {
   public func setBezelOffset(_ mm: Swift.Int) -> Swift.Bool
   public func getFeeder() -> EvolisFramework.Feeder?
   public func setFeeder(_ f: EvolisFramework.Feeder) -> Swift.Bool
+  public func isLaminatorValid(_ index: EvolisFramework.LaminatorIndex, timeoutMs: Swift.Int = Evolis.TIMEOUT) -> Swift.Bool
+  public func getLaminatorInfo(_ index: EvolisFramework.LaminatorIndex, timeoutMs: Swift.Int = Evolis.TIMEOUT) -> EvolisFramework.LaminatorInfo?
+  public func getLaminatorFilmInfo(_ index: EvolisFramework.LaminatorIndex, timeoutMs: Swift.Int = Evolis.TIMEOUT) -> EvolisFramework.LaminatorFilmInfo?
+  public func isParallelModeEnabled(_ timeoutMs: Swift.Int = Evolis.TIMEOUT) -> Swift.Bool
+  public func enableParallelMode(_ enable: Swift.Bool, timeoutMs: Swift.Int = Evolis.TIMEOUT) -> Swift.Bool
+  public func setLaminatorSpeedCfg(_ index: EvolisFramework.LaminatorIndex, face: EvolisFramework.CardFace, value: Swift.Int, timeoutMs: Swift.Int = Evolis.TIMEOUT) -> Swift.Bool
+  public func setLaminatorTemp(_ index: EvolisFramework.LaminatorIndex, face: EvolisFramework.CardFace, value: Swift.Int, timeoutMs: Swift.Int = Evolis.TIMEOUT) -> Swift.Bool
+  public func setLaminatorMode(_ index: EvolisFramework.LaminatorIndex, mode: EvolisFramework.LaminatorMode, timeoutMs: Swift.Int = Evolis.TIMEOUT) -> Swift.Bool
+  public func setLaminatorFirstPatch(_ index: EvolisFramework.LaminatorIndex, front: Swift.Bool, timeoutMs: Swift.Int = Evolis.TIMEOUT) -> Swift.Bool
+  public func get_event() -> (Swift.String, Swift.Array<EvolisFramework.ServiceAction>)?
+  public func set_event(event_name: Swift.String, action: EvolisFramework.ServiceAction) -> Swift.Bool
 }
 public enum Feeder : Swift.UInt32 {
   case UNKNOWN
@@ -766,6 +858,7 @@ public enum Mark : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case Identisys
   case Bodno
   case BRAVO
+  case ATC
   public init?(rawValue: Swift.UInt32)
   public typealias AllCases = [EvolisFramework.Mark]
   public typealias RawValue = Swift.UInt32
@@ -795,6 +888,10 @@ public enum ReturnCode : Swift.Int32, Swift.CaseIterable, Swift.Codable {
   case PRINT_EUNKNOWNRIBBON
   case PRINT_ENOIMAGE
   case PRINT_WSETTING
+  case LAM_ENOCOM
+  case LAM_EDEVICE
+  case LAM_ERROR
+  case LAM_EVALUE
   case MAG_ERROR
   case MAG_EDATA
   case MAG_EBLANK
@@ -803,6 +900,17 @@ public enum ReturnCode : Swift.Int32, Swift.CaseIterable, Swift.Codable {
   case PRINTER_EOTHER
   case PRINTER_EBUSY
   case PRINTER_NOSTATUS
+  case SVC_ENOCOM
+  case SVC_EREPLY
+  case SVC_ERROR
+  case SVC_EDATA
+  case SVC_NO_EVENT
+  case SVC_EEVENT
+  case SVC_EACTION
+  case HTTP_REPLY_NOT_OK
+  case HTTP_EREQUEST_ERROR
+  case HTTP_EREPLY_FORMAT
+  case HTTP_ERROR
   public static func from(rawValue: Swift.Int) -> EvolisFramework.ReturnCode
   public static func from(rawValue: Swift.Int32) -> EvolisFramework.ReturnCode
   public init?(rawValue: Swift.Int32)
@@ -815,6 +923,21 @@ public enum ReturnCode : Swift.Int32, Swift.CaseIterable, Swift.Codable {
     get
   }
 }
+public enum ServiceAction : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
+  case NONE
+  case OK
+  case RETRY
+  case CANCEL
+  public init?(rawValue: Swift.UInt32)
+  public typealias AllCases = [EvolisFramework.ServiceAction]
+  public typealias RawValue = Swift.UInt32
+  public static var allCases: [EvolisFramework.ServiceAction] {
+    get
+  }
+  public var rawValue: Swift.UInt32 {
+    get
+  }
+}
 public enum OpenMode : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case AUTO
   case DIRECT
@@ -823,6 +946,25 @@ public enum OpenMode : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   public typealias AllCases = [EvolisFramework.OpenMode]
   public typealias RawValue = Swift.UInt32
   public static var allCases: [EvolisFramework.OpenMode] {
+    get
+  }
+  public var rawValue: Swift.UInt32 {
+    get
+  }
+}
+public enum LaminatorMode : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
+  case UNKNOWN
+  case EJECT
+  case FRONT
+  case BACK
+  case FRONT_BACK
+  case BACK_FRONT
+  case FRONT_FLIP
+  case BACK_FLIP
+  public init?(rawValue: Swift.UInt32)
+  public typealias AllCases = [EvolisFramework.LaminatorMode]
+  public typealias RawValue = Swift.UInt32
+  public static var allCases: [EvolisFramework.LaminatorMode] {
     get
   }
   public var rawValue: Swift.UInt32 {
@@ -847,6 +989,7 @@ public enum Model : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case ID_Maker_Elypso
   case Evolis_Zenius
   case ID_Maker_Zenius
+  case ATC_ATC300
   case Evolis_Apteo
   case BadgePass_Connect_Lite
   case Durable_Duracard_ID_300
@@ -860,6 +1003,7 @@ public enum Model : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case Evolis_Lamination_Module
   case Evolis_KC_Essential
   case Evolis_KC_Prime
+  case ATC_ATC310
   case Evolis_KC_Max
   case Evolis_Primacy_2
   case Evolis_Asmi
@@ -869,8 +1013,10 @@ public enum Model : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case Plasco_Primacy_2_LE
   case Identisys_Primacy_2_SE
   case BRAVO_DC_3300
+  case Evolis_EPX300
   case Evolis_Avansia
   case Evolis_Agilia
+  case ATC_ATC600
   case Evolis_Quantum2
   public init?(rawValue: Swift.UInt32)
   public typealias AllCases = [EvolisFramework.Model]
@@ -1007,13 +1153,15 @@ public struct PrinterStatus {
     case INF_WRONG_ZONE_CLEAR_EXPIRED
     case INF_RETRANSFER_RUNNING
     case INF_HEATING
+    case INF_RX_COM_ALIVE
     case INF_CARD_MAN_FEED
     case INF_HEAT_ROLLER_WORN_OUT
-    case INF_PRE_HEATING_PRINT_HEAD
+    case INF_ETH_CONF_CHANGED
     case INF_CARD_BRIDGE
     case INF_CARD_INDENTING
     case INF_BRIDGE_UPDATING_FIRMWARE
     case INF_CASSETTE_PRESENCE
+    case INF_FLASHDRIVE_COPY
     case WAR_POWER_SUPPLY
     case WAR_REMOVE_RIBBON
     case WAR_RECEPTACLE_OPEN
@@ -1063,12 +1211,12 @@ public struct PrinterStatus {
     case ERR_CARD_ON_EJECT
     case ERR_NO_CARD_INSERTED
     case ERR_FEEDER_OPEN
+    case ERR_INTERNAL_PRINTER
     case ERR_LAMI_TEMPERATURE
     case ERR_LAMINATE
     case ERR_LAMI_MECHANICAL
     case ERR_LAMINATE_END
     case ERR_LAMI_COVER_OPEN
-    case ERR_PRE_HEATING_PRINT_HEAD
     case RSV_WAR_0X20000000
     case RSV_WAR_0X00800000
     case RSV_WAR_0X00400000
@@ -1083,14 +1231,13 @@ public struct PrinterStatus {
     case RSV_WAR_0X00000001
     case RSV_ERR_0X80000000
     case RSV_ERR_0X40000000
-    case RSV_ERR_0X00000040
     case RSV_ERR_0X00000020
     case RSV_ERR_0X00000010
     case RSV_ERR_0X00000008
     case RSV_ERR_0X00000004
     case RSV_ERR_0X00000002
     case RSV_ERR_0X00000001
-    case RSV_EX3_0X10000000
+    case RSV_EX3_0X01000000
     case RSV_EX3_0X00800000
     case RSV_EX3_0X00400000
     case RSV_EX3_0X00200000
@@ -1107,7 +1254,6 @@ public struct PrinterStatus {
     case RSV_EX3_0X00000400
     case RSV_EX3_0X00000200
     case RSV_EX3_0X00000100
-    case RSV_EX3_0X00000001
     public init?(rawValue: Swift.UInt32)
     public typealias AllCases = [EvolisFramework.PrinterStatus.Flag]
     public typealias RawValue = Swift.UInt32
@@ -1211,11 +1357,11 @@ public struct PrinterStatus {
     case EX3_CFG_EXTENSION_4
     case EX3_INF_RETRANSFER_RUNNING
     case EX3_INF_HEATING
-    case EX3_RSV_EX3_0X10000000
+    case EX3_INF_RX_COM_ALIVE
     case EX3_INF_CARD_MAN_FEED
     case EX3_INF_HEAT_ROLLER_WORN_OUT
-    case EX3_INF_PRE_HEATING_PRINT_HEAD
-    case EX3_ERR_PRE_HEATING_PRINT_HEAD
+    case EX3_INF_ETH_CONF_CHANGED
+    case EX3_RSV_EX3_0X01000000
     case EX3_RSV_EX3_0X00800000
     case EX3_RSV_EX3_0X00400000
     case EX3_RSV_EX3_0X00200000
@@ -1239,7 +1385,7 @@ public struct PrinterStatus {
     case EX3_INF_BRIDGE_UPDATING_FIRMWARE
     case EX3_DEF_REJECT_BOX_ALMOST_FULL
     case EX3_INF_CASSETTE_PRESENCE
-    case EX3_RSV_EX3_0X00000001
+    case EX3_INF_FLASHDRIVE_COPY
     public init?(rawValue: Swift.UInt32)
     public typealias AllCases = [EvolisFramework.PrinterStatus.Ex3Flag]
     public typealias RawValue = Swift.UInt32
@@ -1307,9 +1453,15 @@ public enum RibbonType : Swift.Int32, Swift.CaseIterable, Swift.Codable {
 extension EvolisFramework.MagFormat : Swift.Equatable {}
 extension EvolisFramework.MagFormat : Swift.Hashable {}
 extension EvolisFramework.MagFormat : Swift.RawRepresentable {}
+extension EvolisFramework.LaminatorIndex : Swift.Equatable {}
+extension EvolisFramework.LaminatorIndex : Swift.Hashable {}
+extension EvolisFramework.LaminatorIndex : Swift.RawRepresentable {}
 extension EvolisFramework.MagCoercivity : Swift.Equatable {}
 extension EvolisFramework.MagCoercivity : Swift.Hashable {}
 extension EvolisFramework.MagCoercivity : Swift.RawRepresentable {}
+extension EvolisFramework.LaminatorFilmType : Swift.Equatable {}
+extension EvolisFramework.LaminatorFilmType : Swift.Hashable {}
+extension EvolisFramework.LaminatorFilmType : Swift.RawRepresentable {}
 extension EvolisFramework.CardFace : Swift.Equatable {}
 extension EvolisFramework.CardFace : Swift.Hashable {}
 extension EvolisFramework.CardFace : Swift.RawRepresentable {}
@@ -1358,9 +1510,15 @@ extension EvolisFramework.Mark : Swift.RawRepresentable {}
 extension EvolisFramework.ReturnCode : Swift.Equatable {}
 extension EvolisFramework.ReturnCode : Swift.Hashable {}
 extension EvolisFramework.ReturnCode : Swift.RawRepresentable {}
+extension EvolisFramework.ServiceAction : Swift.Equatable {}
+extension EvolisFramework.ServiceAction : Swift.Hashable {}
+extension EvolisFramework.ServiceAction : Swift.RawRepresentable {}
 extension EvolisFramework.OpenMode : Swift.Equatable {}
 extension EvolisFramework.OpenMode : Swift.Hashable {}
 extension EvolisFramework.OpenMode : Swift.RawRepresentable {}
+extension EvolisFramework.LaminatorMode : Swift.Equatable {}
+extension EvolisFramework.LaminatorMode : Swift.Hashable {}
+extension EvolisFramework.LaminatorMode : Swift.RawRepresentable {}
 extension EvolisFramework.Model : Swift.Equatable {}
 extension EvolisFramework.Model : Swift.Hashable {}
 extension EvolisFramework.Model : Swift.RawRepresentable {}
