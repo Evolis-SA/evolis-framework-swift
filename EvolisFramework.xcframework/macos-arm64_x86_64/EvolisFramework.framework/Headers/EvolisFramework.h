@@ -13,6 +13,5 @@ FOUNDATION_EXPORT double EvolisFrameworkVersionNumber;
 //! Project version string for EvolisFramework.
 FOUNDATION_EXPORT const unsigned char EvolisFrameworkVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <EvolisFramework/PublicHeader.h>
-
-
+// In this header, you should import all the public headers of your framework using statements like #import
+// <EvolisFramework/PublicHeader.h>
