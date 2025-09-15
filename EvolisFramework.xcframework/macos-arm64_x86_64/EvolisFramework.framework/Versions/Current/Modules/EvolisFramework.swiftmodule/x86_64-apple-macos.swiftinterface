@@ -24,14 +24,24 @@ public class MagSession {
   public func initialize()
   public func getCoercivity() -> EvolisFramework.MagCoercivity
   public func setCoercivity(_ mc: EvolisFramework.MagCoercivity)
+  @available(*, deprecated)
   public func getFormat(forTrack: Swift.Int) -> EvolisFramework.MagFormat
+  public func getFormat(forTrack: EvolisFramework.MagTrackNumber) -> EvolisFramework.MagFormat
+  @available(*, deprecated)
   public func setFormat(forTrack: Swift.Int, _ format: EvolisFramework.MagFormat)
+  public func setFormat(forTrack: EvolisFramework.MagTrackNumber, _ format: EvolisFramework.MagFormat)
+  @available(*, deprecated)
   public func getData(forTrack: Swift.Int) -> Swift.String?
+  public func getData(forTrack: EvolisFramework.MagTrackNumber) -> Swift.String?
+  @available(*, deprecated)
   public func getStatus(forTrack: Swift.Int) -> EvolisFramework.ReturnCode
-  public func setTrack(_ track: Swift.Int, format: EvolisFramework.MagFormat, data: Swift.String)
-  public func write() -> EvolisFramework.ReturnCode
-  public func read() -> EvolisFramework.ReturnCode
-  public func readTracks(t0: Swift.Bool, t1: Swift.Bool, t2: Swift.Bool) -> EvolisFramework.ReturnCode
+  public func getStatus(forTrack: EvolisFramework.MagTrackNumber) -> EvolisFramework.ReturnCode
+  @available(*, deprecated)
+  public func setTrack(_ track: Swift.Int, format: EvolisFramework.MagFormat, data: Swift.String) -> EvolisFramework.ReturnCode
+  public func setTrack(_ track: EvolisFramework.MagTrackNumber, format: EvolisFramework.MagFormat, data: Swift.String) -> EvolisFramework.ReturnCode
+  public func write(timeoutMs: Swift.Int = Evolis.TIMEOUT) -> EvolisFramework.ReturnCode
+  public func read(timeoutMs: Swift.Int = Evolis.TIMEOUT) -> EvolisFramework.ReturnCode
+  public func readTracks(t0: Swift.Bool, t1: Swift.Bool, t2: Swift.Bool, timeoutMs: Swift.Int = Evolis.TIMEOUT) -> EvolisFramework.ReturnCode
   @objc deinit
 }
 public enum MagFormat : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
@@ -82,6 +92,9 @@ public class PrintSession {
   public func setSilver(_ cardFace: EvolisFramework.CardFace, path: Swift.String) -> Swift.Bool
   public func setSilver(cardFace: EvolisFramework.CardFace, data: [Swift.UInt8]) -> Swift.Bool
   public func setSilver(cardFace: EvolisFramework.CardFace, data: Foundation.Data) -> Swift.Bool
+  public func setUv(_ cardFace: EvolisFramework.CardFace, path: Swift.String) -> Swift.Bool
+  public func setUv(cardFace: EvolisFramework.CardFace, data: [Swift.UInt8]) -> Swift.Bool
+  public func setUv(cardFace: EvolisFramework.CardFace, data: Foundation.Data) -> Swift.Bool
   public func getForcedSettingCount() -> Swift.Int
   public func getForcedSettingKey(_ index: Swift.Int) -> Swift.String?
   public func getForcedSetting(_ key: Swift.String) -> Swift.String?
@@ -351,6 +364,22 @@ public enum OutputTray : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
     get
   }
 }
+public enum MagTrackNumber : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
+  case TRACK1
+  case TRACK2
+  case TRACK3
+  public static func from(c: EvolisSDK.evolis_mag_format_e) -> EvolisFramework.MagTrackNumber
+  public static func from(rawValue: Swift.UInt32) -> EvolisFramework.MagTrackNumber
+  public init?(rawValue: Swift.UInt32)
+  public typealias AllCases = [EvolisFramework.MagTrackNumber]
+  public typealias RawValue = Swift.UInt32
+  public static var allCases: [EvolisFramework.MagTrackNumber] {
+    get
+  }
+  public var rawValue: Swift.UInt32 {
+    get
+  }
+}
 public class Connection {
   public init()
   public init(_ name: Swift.String, mode: EvolisFramework.OpenMode = .AUTO)
@@ -564,6 +593,7 @@ public class PrinterState {
     case AVANSIA_OPT_MAGNETIC_JIS2
     case DEF_FEEDER_OPEN
     case ERR_FEEDER_OPEN
+    case INF_LAMI_CLEANING
     public static func from(rawValue: Swift.UInt32) -> EvolisFramework.PrinterState.MinorState
     public init?(rawValue: Swift.UInt32)
     public typealias AllCases = [EvolisFramework.PrinterState.MinorState]
@@ -647,7 +677,6 @@ public enum SettingKey : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case BUvBrightness
   case BUvContrast
   case BUvManagement
-  case BUvPremium
   case Duplex
   case FBlackManagement
   case FColorBrightness
@@ -667,7 +696,6 @@ public enum SettingKey : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case FUvBrightness
   case FUvContrast
   case FUvManagement
-  case FUvPremium
   case GCardPreloading
   case GDigitalScrambling
   case GDuplexType
@@ -687,6 +715,7 @@ public enum SettingKey : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case GPrintingMode
   case GShortPanelManagement
   case GSmoothing
+  case GUvPremium
   case IBBlackCustom
   case IBBlackLevelValue
   case IBDarkLevelValue
@@ -728,7 +757,6 @@ public enum SettingKey : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case IGMonoReaderType
   case IGMonochromeSpeed
   case IGRegionOrientation
-  case IGRibbonOptimization
   case IGSendIQLA
   case IGSendSpoolerSession
   case IGDisableAutoEject
@@ -872,6 +900,9 @@ public enum Mark : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
 public enum ReturnCode : Swift.Int32, Swift.CaseIterable, Swift.Codable {
   case OK
   case EUNDEFINED
+  case EINTERNAL
+  case ECANCELLED
+  case EDISABLED
   case EUNSUPPORTED
   case EPARAMS
   case ETIMEOUT
@@ -888,6 +919,8 @@ public enum ReturnCode : Swift.Int32, Swift.CaseIterable, Swift.Codable {
   case PRINT_EUNKNOWNRIBBON
   case PRINT_ENOIMAGE
   case PRINT_WSETTING
+  case PRINT_EJOB
+  case PRINT_ESESSION
   case LAM_ENOCOM
   case LAM_EDEVICE
   case LAM_ERROR
@@ -900,6 +933,25 @@ public enum ReturnCode : Swift.Int32, Swift.CaseIterable, Swift.Codable {
   case PRINTER_EOTHER
   case PRINTER_EBUSY
   case PRINTER_NOSTATUS
+  case PRINTER_EMODEL
+  case PRINTER_NETWORK_ERROR
+  case PRINTER_NETWORK_ECERT
+  case CARD_ERROR
+  case CARD_EINSERTION
+  case SMART_ERROR
+  case SMART_ENOCOM
+  case SMART_ENOCARD
+  case SMART_EBUSY
+  case SYSTEM_ERROR
+  case SYSTEM_EBUSY
+  case SYSTEM_EFILE
+  case USER_ERROR
+  case USER_EUNIDENTIFIED
+  case USER_EUNAUTHORIZED
+  case USER_ETIMEOUT
+  case USER_EINVALID
+  case SANDBOX_ERROR
+  case SANDBOX_EBUSY
   case SVC_ENOCOM
   case SVC_EREPLY
   case SVC_ERROR
@@ -1018,6 +1070,8 @@ public enum Model : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case Evolis_Agilia
   case ATC_ATC600
   case Evolis_Quantum2
+  case Evolis_Zenius_2_Classic
+  case Evolis_Zenius_2_Expert
   public init?(rawValue: Swift.UInt32)
   public typealias AllCases = [EvolisFramework.Model]
   public typealias RawValue = Swift.UInt32
@@ -1157,9 +1211,11 @@ public struct PrinterStatus {
     case INF_CARD_MAN_FEED
     case INF_HEAT_ROLLER_WORN_OUT
     case INF_ETH_CONF_CHANGED
+    case INF_LAMI_CLEANING
     case INF_CARD_BRIDGE
     case INF_CARD_INDENTING
     case INF_BRIDGE_UPDATING_FIRMWARE
+    case INF_PHYSICAL_COVER_OPEN
     case INF_CASSETTE_PRESENCE
     case INF_FLASHDRIVE_COPY
     case WAR_POWER_SUPPLY
@@ -1187,7 +1243,6 @@ public struct PrinterStatus {
     case WAR_LAMINATE_END
     case WAR_LAMI_HOPPER_FULL
     case WAR_LAMINATE_UNSUPPORTED
-    case WAR_REJECT_BOX_ALMOST_FULL
     case ERR_HEAD_TEMP
     case ERR_NO_OPTION
     case ERR_FEEDER_ERROR
@@ -1242,7 +1297,6 @@ public struct PrinterStatus {
     case RSV_EX3_0X00400000
     case RSV_EX3_0X00200000
     case RSV_EX3_0X00100000
-    case RSV_EX3_0X00080000
     case RSV_EX3_0X00040000
     case RSV_EX3_0X00020000
     case RSV_EX3_0X00010000
@@ -1366,7 +1420,7 @@ public struct PrinterStatus {
     case EX3_RSV_EX3_0X00400000
     case EX3_RSV_EX3_0X00200000
     case EX3_RSV_EX3_0X00100000
-    case EX3_RSV_EX3_0X00080000
+    case EX3_INF_LAMI_CLEANING
     case EX3_RSV_EX3_0X00040000
     case EX3_RSV_EX3_0X00020000
     case EX3_RSV_EX3_0X00010000
@@ -1383,7 +1437,7 @@ public struct PrinterStatus {
     case EX3_CFG_INDENTING
     case EX3_INF_CARD_INDENTING
     case EX3_INF_BRIDGE_UPDATING_FIRMWARE
-    case EX3_DEF_REJECT_BOX_ALMOST_FULL
+    case EX3_INF_PHYSICAL_COVER_OPEN
     case EX3_INF_CASSETTE_PRESENCE
     case EX3_INF_FLASHDRIVE_COPY
     public init?(rawValue: Swift.UInt32)
@@ -1474,6 +1528,9 @@ extension EvolisFramework.BezelBehavior : Swift.RawRepresentable {}
 extension EvolisFramework.OutputTray : Swift.Equatable {}
 extension EvolisFramework.OutputTray : Swift.Hashable {}
 extension EvolisFramework.OutputTray : Swift.RawRepresentable {}
+extension EvolisFramework.MagTrackNumber : Swift.Equatable {}
+extension EvolisFramework.MagTrackNumber : Swift.Hashable {}
+extension EvolisFramework.MagTrackNumber : Swift.RawRepresentable {}
 extension EvolisFramework.Feeder : Swift.Equatable {}
 extension EvolisFramework.Feeder : Swift.Hashable {}
 extension EvolisFramework.Feeder : Swift.RawRepresentable {}
