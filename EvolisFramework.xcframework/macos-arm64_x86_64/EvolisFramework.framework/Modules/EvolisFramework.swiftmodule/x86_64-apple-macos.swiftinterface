@@ -115,6 +115,7 @@ public class PrintSession {
   public func getAutoEject() -> Swift.Bool
   public func print(_ timeout: Swift.Int = Evolis.PRINT_TIMEOUT) -> EvolisFramework.ReturnCode
   public func printToFile(_ path: Swift.String) -> EvolisFramework.ReturnCode
+  @available(*, deprecated, message: "This method is deprecated, use clearMechanicalErrors from the Connection class instead")
   public func clearMechanicalErrors() -> Swift.Bool
   public func setPrintLogPath(dirPath: Swift.String?)
   public func getLastError() -> EvolisFramework.ReturnCode
@@ -185,6 +186,7 @@ public enum LaminatorFilmType : Swift.UInt32, Swift.CaseIterable, Swift.Codable 
   case ALT_SMART_FULL_1_0_MIL
   case ALT_SMART_MAG_1_0_MIL
   case ALT_FULL_MAG_1_0_MI
+  case ALT_0_6_MIL_GEN_HOLO
   public init?(rawValue: Swift.UInt32)
   public typealias AllCases = [EvolisFramework.LaminatorFilmType]
   public typealias RawValue = Swift.UInt32
@@ -281,6 +283,7 @@ public enum CardFace : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   public static func setLogLevel(_ level: EvolisFramework.LogLevel)
   public static func setLogPath(_ path: Swift.String)
   public static func setConsoleOutput(_ on: Swift.Bool)
+  public static func getModelName(_ model: EvolisFramework.Model) -> Swift.String
   @objc deinit
 }
 public enum InputTray : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
@@ -414,6 +417,7 @@ public class Connection {
   public func setSessionManagement(_ on: Swift.Bool)
   public func getErrorManagement() -> EvolisFramework.ErrorManagement?
   public func setErrorManagement(_ em: EvolisFramework.ErrorManagement) -> Swift.Bool
+  public func clearMechanicalErrors() -> Swift.Bool
   public func getStatus() -> EvolisFramework.PrinterStatus?
   public func enableStatus() -> Swift.Bool?
   public func sendStatusRequest() -> EvolisFramework.PrinterStatus?
@@ -439,8 +443,26 @@ public class Connection {
   public func setLaminatorTemp(_ index: EvolisFramework.LaminatorIndex, face: EvolisFramework.CardFace, value: Swift.Int, timeoutMs: Swift.Int = Evolis.TIMEOUT) -> Swift.Bool
   public func setLaminatorMode(_ index: EvolisFramework.LaminatorIndex, mode: EvolisFramework.LaminatorMode, timeoutMs: Swift.Int = Evolis.TIMEOUT) -> Swift.Bool
   public func setLaminatorFirstPatch(_ index: EvolisFramework.LaminatorIndex, front: Swift.Bool, timeoutMs: Swift.Int = Evolis.TIMEOUT) -> Swift.Bool
-  public func get_event() -> (Swift.String, Swift.Array<EvolisFramework.ServiceAction>)?
-  public func set_event(event_name: Swift.String, action: EvolisFramework.ServiceAction) -> Swift.Bool
+  public func getEvent() -> (Swift.String, Swift.Array<EvolisFramework.ServiceAction>)?
+  public func setEvent(event_name: Swift.String, action: EvolisFramework.ServiceAction) -> Swift.Bool
+  public func setUnlockTime(time: Swift.Int) -> Swift.Bool
+  public func getUnlockTime() -> Swift.Int
+  public func unlock() -> Swift.Bool
+  public func lock() -> Swift.Bool
+  public func lockEnable() -> Swift.Bool
+  public func lockDisable() -> Swift.Bool
+  public func lockIsEnabled() -> Swift.Bool
+  public func kineclipseEnable() -> Swift.Bool
+  public func kineclipseDisable() -> Swift.Bool
+  public func kineclipseSetNumberOfPass(passes: Swift.Int) -> Swift.Bool
+  public func kineclipseGetNumberOfPass() -> Swift.Int
+  public func kineclipseIsEnabled() -> Swift.Bool
+  public func setStandbyTime(seconds: Swift.Int) -> Swift.Bool
+  public func getStandbyTime() -> Swift.Int
+  public func setAutoShutdownTime(seconds: Swift.Int) -> Swift.Bool
+  public func getAutoShutdownTime() -> Swift.Int
+  public func shutdown() -> Swift.Bool
+  public func flipCard() -> Swift.Bool
 }
 public enum Feeder : Swift.UInt32 {
   case UNKNOWN
@@ -747,6 +769,7 @@ public enum SettingKey : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case IFUvCustom
   case IFThresholdValue
   case IGBlackSub
+  case IG10milCardThickness
   case IGDuplexPreset
   case IGIQLABC
   case IGIQLABM
@@ -887,6 +910,7 @@ public enum Mark : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case Bodno
   case BRAVO
   case ATC
+  case Boya_Wuzhou
   public init?(rawValue: Swift.UInt32)
   public typealias AllCases = [EvolisFramework.Mark]
   public typealias RawValue = Swift.UInt32
@@ -945,6 +969,7 @@ public enum ReturnCode : Swift.Int32, Swift.CaseIterable, Swift.Codable {
   case SYSTEM_ERROR
   case SYSTEM_EBUSY
   case SYSTEM_EFILE
+  case SYSTEM_ENETWORK
   case USER_ERROR
   case USER_EUNIDENTIFIED
   case USER_EUNAUTHORIZED
@@ -1037,6 +1062,8 @@ public enum Model : Swift.UInt32, Swift.CaseIterable, Swift.Codable {
   case BadgePass_Connect
   case BadgePass_NXT5000
   case ID_Maker_Primacy
+  case Boya_Wuzhou_BY_W3
+  case Evolis_DC_380
   case Evolis_Elypso
   case ID_Maker_Elypso
   case Evolis_Zenius
@@ -1132,6 +1159,7 @@ public struct PrinterStatus {
     case CFG_EXTENSION_3
     case CFG_LAMINATION_MODULE_2
     case CFG_EXTENSION_4
+    case CFG_REGULATION_TEMP_HMD
     case CFG_BRIDGE
     case CFG_INDENTING
     case INF_CLAIM
@@ -1292,7 +1320,6 @@ public struct PrinterStatus {
     case RSV_ERR_0X00000004
     case RSV_ERR_0X00000002
     case RSV_ERR_0X00000001
-    case RSV_EX3_0X01000000
     case RSV_EX3_0X00800000
     case RSV_EX3_0X00400000
     case RSV_EX3_0X00200000
@@ -1415,7 +1442,7 @@ public struct PrinterStatus {
     case EX3_INF_CARD_MAN_FEED
     case EX3_INF_HEAT_ROLLER_WORN_OUT
     case EX3_INF_ETH_CONF_CHANGED
-    case EX3_RSV_EX3_0X01000000
+    case EX3_CFG_REGULATION_TEMP_HMD
     case EX3_RSV_EX3_0X00800000
     case EX3_RSV_EX3_0X00400000
     case EX3_RSV_EX3_0X00200000
