@@ -492,6 +492,10 @@ public class Connection {
 }
 public enum Feeder : Swift.UInt32 {
   case UNKNOWN
+  case FEEDER_1
+  case FEEDER_2
+  case FEEDER_3
+  case FEEDER_4
   case A
   case B
   case C

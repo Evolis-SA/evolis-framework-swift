@@ -18120,6 +18120,166 @@
           },
           {
             "kind": "Var",
+            "name": "FEEDER_1",
+            "printedName": "FEEDER_1",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EvolisFramework.Feeder.Type) -> EvolisFramework.Feeder",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Feeder",
+                    "printedName": "EvolisFramework.Feeder",
+                    "usr": "s:15EvolisFramework6FeederO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EvolisFramework.Feeder.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Feeder",
+                        "printedName": "EvolisFramework.Feeder",
+                        "usr": "s:15EvolisFramework6FeederO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15EvolisFramework6FeederO8FEEDER_1yA2CmF",
+            "mangledName": "$s15EvolisFramework6FeederO8FEEDER_1yA2CmF",
+            "moduleName": "EvolisFramework",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "FEEDER_2",
+            "printedName": "FEEDER_2",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EvolisFramework.Feeder.Type) -> EvolisFramework.Feeder",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Feeder",
+                    "printedName": "EvolisFramework.Feeder",
+                    "usr": "s:15EvolisFramework6FeederO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EvolisFramework.Feeder.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Feeder",
+                        "printedName": "EvolisFramework.Feeder",
+                        "usr": "s:15EvolisFramework6FeederO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15EvolisFramework6FeederO8FEEDER_2yA2CmF",
+            "mangledName": "$s15EvolisFramework6FeederO8FEEDER_2yA2CmF",
+            "moduleName": "EvolisFramework",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "FEEDER_3",
+            "printedName": "FEEDER_3",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EvolisFramework.Feeder.Type) -> EvolisFramework.Feeder",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Feeder",
+                    "printedName": "EvolisFramework.Feeder",
+                    "usr": "s:15EvolisFramework6FeederO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EvolisFramework.Feeder.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Feeder",
+                        "printedName": "EvolisFramework.Feeder",
+                        "usr": "s:15EvolisFramework6FeederO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15EvolisFramework6FeederO8FEEDER_3yA2CmF",
+            "mangledName": "$s15EvolisFramework6FeederO8FEEDER_3yA2CmF",
+            "moduleName": "EvolisFramework",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "FEEDER_4",
+            "printedName": "FEEDER_4",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EvolisFramework.Feeder.Type) -> EvolisFramework.Feeder",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Feeder",
+                    "printedName": "EvolisFramework.Feeder",
+                    "usr": "s:15EvolisFramework6FeederO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EvolisFramework.Feeder.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Feeder",
+                        "printedName": "EvolisFramework.Feeder",
+                        "usr": "s:15EvolisFramework6FeederO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15EvolisFramework6FeederO8FEEDER_4yA2CmF",
+            "mangledName": "$s15EvolisFramework6FeederO8FEEDER_4yA2CmF",
+            "moduleName": "EvolisFramework",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "A",
             "printedName": "A",
             "children": [
@@ -62984,107 +63144,191 @@
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
       "kind": "IntegerLiteral",
-      "offset": 416,
+      "offset": 417,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
       "kind": "IntegerLiteral",
-      "offset": 472,
+      "offset": 458,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
       "kind": "IntegerLiteral",
-      "offset": 528,
+      "offset": 499,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
       "kind": "IntegerLiteral",
-      "offset": 584,
+      "offset": 540,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
       "kind": "IntegerLiteral",
-      "offset": 640,
+      "offset": 581,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
       "kind": "IntegerLiteral",
-      "offset": 416,
+      "offset": 637,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 693,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 749,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 805,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 417,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
       "kind": "IntegerLiteral",
-      "offset": 472,
+      "offset": 458,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
       "kind": "IntegerLiteral",
-      "offset": 528,
+      "offset": 499,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
       "kind": "IntegerLiteral",
-      "offset": 584,
+      "offset": 540,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
       "kind": "IntegerLiteral",
-      "offset": 640,
+      "offset": 581,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
       "kind": "IntegerLiteral",
-      "offset": 416,
+      "offset": 637,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 693,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 749,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 805,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 417,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
       "kind": "IntegerLiteral",
-      "offset": 472,
+      "offset": 458,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
       "kind": "IntegerLiteral",
-      "offset": 528,
+      "offset": 499,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
       "kind": "IntegerLiteral",
-      "offset": 584,
+      "offset": 540,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
       "kind": "IntegerLiteral",
-      "offset": 640,
+      "offset": 581,
       "length": 1,
       "value": "4"
+    },
+    {
+      "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 637,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 693,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 749,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/Feeder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 805,
+      "length": 1,
+      "value": "8"
     },
     {
       "filePath": "\/Users\/testbe\/builds\/VEcZvYyZC\/0\/evoliscardprinter\/be-soft\/sdk\/libevolis\/wrappers\/swift\/EvolisFramework\/EvolisFramework\/PrinterState.swift",
